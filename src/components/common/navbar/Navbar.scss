@@ -1,0 +1,185 @@
+@import "../../../scss/variable";
+@import "../../../scss/mixins";
+
+.navbar {
+  box-shadow: 0px 4px 33px -13px rgba(0, 0, 0, 0.25);
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 14rem;
+    @include respond(tab-port) {
+      padding: 1rem 1rem;
+    }
+    &-logo {
+      & > * {
+        & > img {
+          width: 13rem;
+        }
+      }
+    }
+    &-menus {
+      display: flex;
+      align-items: center;
+      @include respond(tab-port) {
+        display: none;
+      }
+      &-item {
+        & > * {
+          margin-right: 2rem;
+          font-size: 1.8rem;
+          padding: 2.3rem 1rem;
+          border-bottom: 2.5px solid $primary;
+          & > p {
+            color: $gray;
+          }
+        }
+      }
+    }
+
+    &-profile {
+      display: flex;
+      align-items: center;
+      &-login {
+        & > * {
+          background-color: $primary;
+          color: white;
+          font-size: 1.7rem;
+          font-weight: 700;
+          border-radius: 4rem;
+          padding: 1.2rem 3.4rem;
+        }
+      }
+
+      & > * {
+        &:not(:last-child) {
+          margin-right: 2rem;
+          @include respond(tab-port) {
+            margin-right: 0.8rem;
+          }
+        }
+      }
+      & > img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+      }
+
+      &-menuicon {
+        font-size: 3rem;
+        display: none;
+        @include respond(tab-port) {
+          display: block;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.mobile-navbar {
+  position: absolute;
+  width: 100%;
+  transition: all 0.5s;
+  animation-name: mymove;
+  animation-duration: 0.6s;
+  top: 120px;
+  z-index: 50;
+}
+
+.mobile {
+  // background-color: $light-gray;
+  border-radius: 1rem;
+  width: 80%;
+  margin: auto;
+  z-index: 100000;
+  box-shadow: 9px 4px 80px #0a0a0a;
+
+  &-container-menus {
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &-input {
+      & > input {
+        padding: 0.4rem 0.9rem;
+        margin-right: -2rem;
+        border-radius: 2rem;
+        border: none;
+        width: 90%;
+      }
+      & > * {
+        &:last-child {
+          font-size: 1.2rem;
+          cursor: pointer;
+        }
+      }
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      & > * {
+        font-size: 2rem;
+        margin: 2rem 0rem;
+      }
+    }
+  }
+}
+
+// Menu
+
+.dropdown {
+  position: absolute;
+  margin-top: 2rem;
+  right: 6.3%;
+  z-index: 100000;
+  box-shadow: 9px 4px 80px #0a0a0a;
+  border-radius: 1.5rem;
+  &-container {
+    width: 200px;
+    // background-color: $light-gray;
+    padding: 1rem 1.5rem;
+    border: 2px solid $primary;
+    border-radius: 1.5rem;
+    &-item {
+      margin: 1.5rem 0rem;
+      & > * {
+        display: flex;
+        align-items: center;
+        & > * {
+          &:not(:last-child) {
+            color: $primary;
+            margin-right: 1rem;
+            font-size: 3.5rem;
+          }
+        }
+        & > p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    &-logout {
+      margin-top: 3rem;
+      & > button {
+        width: 100%;
+        border-radius: 3rem;
+        padding: 1rem 0rem;
+        background-color: $primary;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@keyframes mymove {
+  0% {
+    top: -1000px;
+    z-index: 10;
+  }
+  100% {
+    top: 120px;
+    z-index: 50;
+  }
+}

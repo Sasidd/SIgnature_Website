@@ -1,0 +1,66 @@
+@import "../../../scss/variable";
+
+.footer {
+  // margin-top: 17rem;
+  background-color: $secondry;
+  &-container {
+    padding: 6.5rem 0rem;
+    display: flex;
+    & > * {
+      &:not(:last-child) {
+        margin-right: 8.4rem;
+      }
+    }
+    &-icons {
+      & > img {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+      }
+      & > * {
+        &:not(:last-child) {
+          margin-right: 1.1rem;
+        }
+      }
+    }
+  }
+  &-bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 16rem;
+    padding-bottom: 6.5rem;
+    & > img {
+      width: 20rem;
+      margin-right: 3rem;
+    }
+    & > p {
+      font-size: 2rem;
+      color: white;
+    }
+  }
+}
+
+// Footer item {
+
+.footeritem {
+  & > h5 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+  }
+  &-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    width: 23rem;
+    & > a {
+      font-size: 2rem;
+      color: $gray-dark;
+    }
+    & > * {
+      &:not(:last-child) {
+        margin-bottom: 0.6rem;
+      }
+    }
+  }
+}

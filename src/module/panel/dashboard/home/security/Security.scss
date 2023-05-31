@@ -1,0 +1,23 @@
+@import "../../../../../scss/variable";
+
+.changepassword {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $secondry-light;
+  height: 100vh;
+  &-container {
+    & > p {
+      font-size: 1.6rem;
+      color: #8a8a8a;
+      margin-bottom: 4rem;
+    }
+    &-form {
+      width: 38.5rem;
+      margin: auto;
+      background-color: white;
+      border-radius: 1rem;
+      padding: 2.7rem 3rem;
+    }
+  }
+}

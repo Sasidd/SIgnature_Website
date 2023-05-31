@@ -1,0 +1,9 @@
+@import "../../scss/variable";
+.text {
+  & > p {
+    font-size: 2rem;
+    line-height: 2.9rem;
+    font-weight: 350;
+    color: #667b96;
+  }
+}

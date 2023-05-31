@@ -1,0 +1,53 @@
+@import "../../../../../scss/variable";
+
+.upper-personal-signature {
+  display: flex;
+  justify-content: space-between;
+  & > p {
+    font-family: "Lato";
+    font-style: italic;
+    font-size: 1.6rem;
+    width: 48rem;
+    margin-bottom: 1rem;
+  }
+  &-eidt {
+    & > hr {
+      margin-top: 1rem;
+    }
+    & > button {
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+      border: 1px solid #afafaf;
+      border-radius: 5px;
+      //   background-color: none;
+      background: none;
+      padding: 0.8rem 1.7rem;
+    }
+  }
+}
+
+.bottom-personal-signature {
+  display: flex;
+  justify-content: space-between;
+  &-content {
+    width: 39rem;
+
+    & > p {
+      font-size: 1.2rem;
+    }
+  }
+  &-btn {
+    margin-left: 2rem;
+    & > * {
+      background: none;
+      border: none;
+      cursor: pointer;
+      &:first-child {
+        border-right: 2px solid black;
+        color: $primary;
+        margin-right: 0.5rem;
+        padding-right: 0.5rem;
+      }
+    }
+  }
+}

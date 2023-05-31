@@ -1,0 +1,44 @@
+.continue-container {
+  margin: 3rem 0rem;
+}
+.donot-have-account {
+  & > p {
+    font-size: 1.7rem;
+    & > a {
+      color: #007aff;
+    }
+  }
+}
+.continue-with {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.7rem 2rem;
+  & > p {
+    // width: 190px;
+    width: 100%;
+
+    margin: 0rem 1rem;
+    color: #a9a9a9;
+    font-size: 1.7rem;
+  }
+  & > div {
+    width: 60%;
+    border: 2px solid #eeeeee;
+  }
+}
+.continue-with-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #a9a9a994;
+  border-radius: 0.8rem;
+  padding: 1rem 0rem;
+  cursor: pointer;
+  & > img {
+    margin-right: 1rem;
+  }
+  & > p {
+    font-size: 1.6rem;
+  }
+}

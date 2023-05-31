@@ -1,0 +1,58 @@
+@import "../../scss/variable";
+
+.siteditor {
+  height: 90vh;
+  &-header {
+    display: flex;
+    align-items: center;
+    background-color: $secondry;
+    overflow-x: hidden;
+    // overflow-x: scroll;
+    border-radius: 3rem;
+    & > * {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.tabbtn {
+  & > button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: $primary;
+    color: $secondry;
+    padding: 1.2rem 3.2rem;
+    border-radius: 3rem;
+
+    & > * {
+      &:first-child {
+        margin-right: 0.6rem;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+// icons shape
+
+.iconShape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & > h4 {
+    font-size: 1.8rem;
+    color: $secondry;
+    font-weight: 400;
+  }
+  & > div {
+    & > * {
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}

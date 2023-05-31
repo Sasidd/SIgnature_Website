@@ -1,0 +1,21 @@
+@import "../../scss/variable";
+.worksignature {
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-content {
+      width: 62rem;
+      & > h2 {
+        color: $secondry;
+        font-size: 3rem;
+        font-weight: 500;
+      }
+    }
+    &-image {
+      & > img {
+        height: 56rem;
+      }
+    }
+  }
+}
