@@ -1,0 +1,42 @@
+@import "../../scss/mixins";
+
+.banner {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+    &-content {
+      margin-top: 18.3rem;
+      width: 58rem;
+      margin-left: 8rem;
+
+      @include respond(tab-port) {
+        padding-top: 10rem;
+        width: 90%;
+        margin: auto;
+      }
+    }
+    &-img {
+      height: 684px;
+
+      @include respond(tab-port) {
+        width: 100%;
+        height: auto;
+        margin-top: 5rem;
+      }
+      & > img {
+        height: 804px;
+        width: 82rem;
+        @include respond(tab-port) {
+          width: 100%;
+          height: auto;
+          margin: auto;
+        }
+      }
+    }
+  }
+}

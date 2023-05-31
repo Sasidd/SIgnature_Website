@@ -1,0 +1,17 @@
+@import "../../scss/variable";
+.settingslayout {
+  &-container {
+    display: flex;
+    height: 100vh;
+    &-outlet {
+      width: 100%;
+      height: 100vh;
+      overflow-y: hidden;
+      overflow-y: scroll;
+      &-content {
+        padding-left: 10rem;
+        padding-right: 4rem;
+      }
+    }
+  }
+}

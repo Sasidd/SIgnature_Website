@@ -1,0 +1,173 @@
+@import "./scss/mixins";
+@import "./scss/variable";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  // font-size: 55%;
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 52.25%; //1 rem = 9px, 9/16 = 50%
+  }
+  @include respond(big-desktop) {
+    font-size: 53%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+.d-flex {
+  display: flex;
+}
+.align-item-center {
+  display: flex;
+  align-items: center;
+}
+.align-item-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.space-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.space-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.space-evenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.m-1 {
+  margin: 1rem 0rem;
+}
+
+.m-2 {
+  margin: 2rem 0rem;
+}
+
+.m-3 {
+  margin: 3rem 0rem;
+}
+
+.m-4 {
+  margin: 4rem 0rem;
+}
+
+.m-5 {
+  margin: 5rem 0rem;
+}
+.m-6 {
+  margin: 6rem 0rem;
+}
+.m-9 {
+  margin: 9rem 0rem;
+}
+
+// Margin Top
+
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.mt-4 {
+  margin-top: 4rem;
+}
+.mt-5 {
+  margin-top: 5rem;
+}
+.mt-6 {
+  margin-top: 6rem;
+}
+
+// margin bottom
+.mb-5 {
+  margin-bottom: 5rem;
+}
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+// margin Left
+.ml-1 {
+  margin-left: 1rem;
+}
+
+// Paddings
+
+.p-1 {
+  padding: 0.5rem 0rem;
+}
+
+// padding top
+.pt-1 {
+  padding-top: 1rem;
+}
+.pt-2 {
+  padding-top: 2rem;
+}
+.pt-3 {
+  padding-top: 3rem;
+}
+.pt-4 {
+  padding-top: 4rem;
+}
+.pt-5 {
+  padding-top: 5rem;
+}
+.pt-6 {
+  padding-top: 6rem;
+}
+
+// Back ground
+
+.bg-white {
+  background-color: white;
+}
+.bg-blue {
+  background-color: $secondry-light;
+}
+
+.free {
+  font-weight: 400;
+}

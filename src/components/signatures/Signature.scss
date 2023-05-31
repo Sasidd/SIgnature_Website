@@ -1,0 +1,156 @@
+@import "../../scss/variable";
+
+///////////
+// Signature 1
+////////////
+
+.signature1 {
+  background-color: $primary;
+  &-container {
+    display: flex;
+    align-items: center;
+    // padding: 0rem 2.5rem;
+    padding-left: 2.5rem;
+
+    & > img {
+      width: 16.4rem;
+      height: 13.7rem;
+      object-fit: cover;
+      margin-right: -10rem;
+      z-index: 1000;
+    }
+    &-content {
+      background-color: white;
+      padding-left: 13rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-right: 2rem;
+      & > h3 {
+        color: #eaad1e;
+        font-size: 1.5rem;
+      }
+      & > p {
+        font-size: 1.2rem;
+      }
+      &-items {
+        padding: 0.8rem 0rem;
+      }
+      &-icons {
+        display: flex;
+        align-items: center;
+        & > * {
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+  &-item {
+    display: flex;
+    & > h4 {
+      width: 40px;
+      font-size: 1rem;
+      color: #70c9d6;
+    }
+    & > p {
+      font-size: 1rem;
+    }
+  }
+  &-icon {
+    background-color: #eaad1e;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > * {
+      font-size: 1rem;
+    }
+  }
+}
+
+///////////
+// Signature 6
+////////////
+
+.signature6 {
+  width: 49.5rem;
+  background-color: white;
+  &-container {
+    display: flex;
+    align-items: center;
+    box-shadow: 4.54087px 4.54087px 9.08175px rgba(110, 196, 207, 0.5);
+    &-profile {
+      background-color: $primary;
+      padding: 2.2rem 5.5rem;
+      & > img {
+        height: 11.3rem;
+        width: 11.3rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      &-icons {
+        margin-top: 1.135rem;
+        & > div {
+          background-color: white;
+          padding: 0.3rem 0.4rem;
+
+          border-radius: 50%;
+          &:not(:last-child) {
+            margin-right: 0.567rem;
+          }
+          & > * {
+            font-size: 1.2rem;
+            color: $primary;
+          }
+        }
+      }
+    }
+    &-content {
+      padding-left: 4.541rem;
+      & > h3 {
+        font-size: 1.7rem;
+        font-weight: 500;
+      }
+      & > p {
+        font-size: 0.8rem;
+      }
+      &-line {
+        border-bottom: 0.7px solid black;
+        margin-top: 0.568rem;
+        margin-bottom: 1.249rem;
+      }
+      &-items {
+        & > * {
+          &:not(:last-child) {
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+      &-subscribe {
+        margin-top: 1.134rem;
+        background-color: $primary;
+        color: white;
+        padding: 0.6rem 2.87rem;
+        border-radius: 3rem;
+        & > p {
+          margin-right: 2rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+.signature6-item {
+  & > img {
+    width: 1.135rem;
+    height: 1.135rem;
+    border-radius: 50%;
+    margin-right: 0.681rem;
+  }
+  & > p {
+    font-size: 0.8rem;
+  }
+}

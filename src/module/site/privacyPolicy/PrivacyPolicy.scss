@@ -1,0 +1,72 @@
+@import "../../../scss/variable";
+
+.privacy-policy {
+  &-heading {
+    margin: 6rem 0rem;
+    & > h5 {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      color: $gray;
+      color: 500;
+    }
+  }
+  &-content {
+    & > p {
+      font-size: 1.6rem;
+      line-height: 2.7rem;
+      color: #2b4465;
+      & > span {
+        text-decoration: underline;
+      }
+    }
+    & > * {
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &-description {
+    padding: 5rem 0rem;
+    & > p {
+      font-size: 1.6rem;
+      line-height: 2.7rem;
+      margin-bottom: 0.7rem;
+      color: #2b4465;
+    }
+    & > ul {
+      margin-left: 3rem;
+      & > li {
+        font-size: 1.5rem;
+        text-decoration: underline;
+        color: #2b4465;
+      }
+      & > * {
+        &:not(:last-child) {
+          margin-bottom: 0.8rem;
+        }
+      }
+    }
+  }
+  &-bottom {
+    margin-top: 2rem;
+    & > p {
+      font-size: 1.6rem;
+
+      margin-bottom: 0.7rem;
+      color: #2b4465;
+    }
+    & > ul {
+      margin-left: 3rem;
+      & > li {
+        font-size: 1.5rem;
+        color: #2b4465;
+      }
+      & > * {
+        &:not(:last-child) {
+          margin-bottom: 0.8rem;
+        }
+      }
+    }
+  }
+}

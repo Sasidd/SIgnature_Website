@@ -1,0 +1,12 @@
+.contactus {
+  &-heading {
+    padding: 19rem 0rem;
+    & > h5 {
+      font-size: 1.7rem;
+      text-align: center;
+      font-weight: 600;
+      margin-top: 1rem;
+      color: rgba(43, 68, 101, 0.5);
+    }
+  }
+}

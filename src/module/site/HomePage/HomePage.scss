@@ -1,0 +1,85 @@
+@import "../../../scss/mixins";
+@import "../../../scss/variable";
+
+.wave-background {
+  background-image: url(../../../assests/wave.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 20rem;
+
+  @include respond(tab-port) {
+    background-image: none;
+  }
+}
+
+.workseam-section {
+  margin-top: -12rem;
+}
+
+// solution section
+
+.solutionsection {
+  margin-top: 4rem;
+
+  &-container {
+    display: flex;
+    &-content {
+      margin-top: 1rem;
+      margin-right: 2rem;
+    }
+  }
+}
+
+// Sub components
+.solution {
+  &-card {
+    & > img {
+      margin-bottom: 2rem;
+      height: 2.8rem;
+      width: 2.8rem;
+    }
+    & > h4 {
+      font-size: 2.6rem;
+      color: $secondry;
+      margin-bottom: 1.2rem;
+    }
+    & > p {
+      font-size: 2rem;
+      line-height: 2.9rem;
+      font-weight: 350;
+      color: #667b96;
+    }
+    & > * {
+      &:last-child {
+        margin-top: 2.8rem;
+      }
+    }
+  }
+}
+
+// Status Card
+.statusitem {
+  &-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    & > h1 {
+      font-size: 5.5rem;
+      color: $primary;
+      font-weight: 800;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+// Top priorities
+
+.top-priorities {
+  margin-top: 13rem;
+  &-text {
+    width: 73.5rem;
+    margin: auto;
+  }
+}

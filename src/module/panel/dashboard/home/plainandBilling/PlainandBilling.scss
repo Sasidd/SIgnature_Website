@@ -1,0 +1,138 @@
+@import "../../../../../scss/variable";
+
+.payment-method {
+  & > h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $secondry;
+    margin: 1.8rem 0rem;
+  }
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-selectcard {
+      display: flex;
+      align-items: center;
+      &-card {
+        border: 1px solid #858585;
+        border-radius: 5px;
+        padding: 0.5rem;
+        margin-right: 2rem;
+        & > img {
+          margin-right: 0.4rem;
+        }
+        & > * {
+          &:last-child {
+            font-size: 4rem;
+            color: $secondry;
+          }
+        }
+      }
+      &-number {
+        // margin-left: 2rem;
+        border: 1px solid #858585;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        & > p {
+          font-size: 1.6rem;
+          color: $secondry;
+        }
+      }
+    }
+    & > h3 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: $primary;
+      margin-right: 1rem;
+    }
+  }
+  & > hr {
+    background-color: $gray;
+    margin: 2rem 0rem;
+  }
+}
+
+// Billing history
+
+.billing-history {
+  & > h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $secondry;
+    margin: 1.8rem 0rem;
+  }
+  &-header {
+    display: flex;
+    align-items: center;
+    & > p {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: $secondry;
+    }
+    & > * {
+      &:not(:last-child) {
+        // margin-right: 10rem;
+        width: 200px;
+      }
+    }
+  }
+  & > hr {
+    background-color: $gray;
+    margin: 2rem 0rem;
+  }
+  &-bottom {
+    display: flex;
+    align-items: center;
+    & > p {
+      font-size: 1.3rem;
+
+      color: $secondry;
+    }
+    & > * {
+      &:not(:last-child) {
+        // margin-right: 10rem;
+        width: 200px;
+      }
+    }
+  }
+}
+
+.trial {
+  margin: 4rem 0rem;
+  background-color: $secondry-light;
+
+  border-radius: 1rem;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    &-content {
+      & > h5 {
+        font-size: 1.7rem;
+        font-weight: 300;
+        & > span {
+          color: #2d87fd;
+          font-weight: 300;
+          font-size: 1.4rem;
+        }
+      }
+      & > p {
+        font-size: 1.7rem;
+        font-weight: 300;
+      }
+    }
+    &-btn {
+      & > button {
+        width: 11.4rem;
+        height: 4rem;
+        background-color: $secondry;
+        color: rgba(255, 255, 255, 0.68);
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1.4rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

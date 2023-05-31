@@ -1,0 +1,53 @@
+@import "../../scss/variable";
+
+// .heading {
+//   & > h1 {
+//     color: $secondry;
+//     margin: 1rem 0rem;
+//   }
+// }
+.primary {
+  & > h1 {
+    font-weight: 600;
+    font-size: 3.6rem;
+    color: $secondry;
+    & > span {
+      color: $primary;
+      font-size: 6rem;
+      font-weight: 800;
+    }
+  }
+}
+
+.primary-light {
+  & > h1 {
+    font-weight: 500;
+    font-size: 3.6rem;
+    color: $secondry;
+  }
+}
+.secondry {
+  & > h1 {
+    color: $secondry;
+    font-weight: 600;
+    font-size: 2.8rem;
+  }
+}
+
+.light {
+  & > h1 {
+    color: $secondry;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+}
+
+.editor {
+  & > h1 {
+    font-size: 2.1rem;
+    color: $secondry;
+    font-weight: 600;
+    margin: 4rem 0rem;
+    text-align: center;
+  }
+}

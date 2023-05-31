@@ -1,0 +1,85 @@
+@import "../../scss/variable";
+button:disabled,
+button:focus:disabled,
+button:hover:disabled,
+button:active:disabled {
+  background: #ccc;
+  border-color: #ccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  & > * {
+    cursor: pointer;
+    border: none;
+    background-color: $primary;
+    color: white;
+    width: 28rem;
+    height: 5.5rem;
+    border-radius: 0.5rem;
+  }
+}
+
+.btn-primary--two {
+  & > * {
+    cursor: pointer;
+    border: none;
+    background-color: $secondry;
+    color: white;
+    width: 28rem;
+    height: 5.5rem;
+    border-radius: 0.5rem;
+  }
+}
+
+.btn-secondry {
+  & > * {
+    cursor: pointer;
+    border: 2px solid $primary;
+    width: 18rem;
+    height: 5.5rem;
+    border-radius: 0.5rem;
+    background-color: $primary;
+    color: white;
+    transition: 0.3s ease-in-out;
+    font-size: 2.6rem;
+    &:hover {
+      background-color: white;
+      color: $primary;
+    }
+  }
+}
+
+.btn-secondry-light {
+  & > * {
+    cursor: pointer;
+    border: 2px solid $primary;
+    width: 18rem;
+    height: 5.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    transition: 0.3s ease-in-out;
+    background-color: white;
+    color: $primary;
+    font-size: 2.6rem;
+    &:hover {
+      background-color: $primary;
+      color: white;
+    }
+  }
+}
+
+.btn-login {
+  & > * {
+    width: 100%;
+    padding: 0.86rem 0rem;
+    background-color: $primary;
+    cursor: pointer;
+    border: 1px solid $primary;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 1rem;
+  }
+}

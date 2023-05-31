@@ -1,0 +1,97 @@
+@import "../../../scss/variable";
+@import "../../../scss/mixins";
+
+.sidebar {
+  // background-color: $sidebar-background;
+  background-color: $secondry-light;
+  position: relative;
+  height: 100vh;
+  @include respond(tab-port) {
+    position: absolute;
+    height: 100vh;
+    z-index: 100000000;
+  }
+  &-container {
+    &-name {
+      // padding: 1.7rem 0rem;
+      padding-top: 4rem;
+      color: $secondry;
+
+      &-icon {
+        padding-left: 4.3rem;
+        & > * {
+          font-size: 2rem;
+          margin-right: 4rem;
+          cursor: pointer;
+          color: $secondry;
+          margin-top: 4px;
+          font-weight: 700;
+        }
+      }
+      &-user {
+        & > h6 {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+      }
+    }
+    &-menu {
+      margin-top: 9rem;
+      &-list {
+        &-link {
+          // margin: 5px 0px;
+          padding-top: 1.8rem;
+          padding-bottom: 1.8rem;
+          padding-left: 4.3rem;
+          &-icon {
+            color: $gray;
+            margin-right: 2.3rem;
+            font-size: 2.8rem;
+          }
+          &-name {
+            color: $gray;
+            font-size: 2rem;
+            font-weight: 600;
+            &::before {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.settings-icon {
+  position: absolute;
+  bottom: 3rem;
+  padding-left: 2rem;
+  & > img {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+#active {
+  & > * {
+    color: $secondry;
+  }
+}
+
+.profile-for-sidebar {
+  display: flex;
+  align-items: center;
+  & > img {
+    height: 4rem;
+    width: 4rem;
+
+    margin-right: 2rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+  }
+  & > h6 {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+}

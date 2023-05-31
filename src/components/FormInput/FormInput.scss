@@ -1,0 +1,156 @@
+@import "../../scss/variable";
+.forminput-container {
+  margin-top: 2.9rem;
+  & > input {
+    padding: 1.6rem 1rem;
+    border-radius: 0.4553rem;
+    border: 1.20938px solid #eeeeee;
+    background: rgba(249, 249, 249, 0.8);
+    text-transform: capitalize;
+  }
+}
+
+.form {
+  &-label {
+    font-size: 1.6rem;
+    display: block;
+    // margin: .4rem 0.3rem;
+    margin-bottom: 1rem;
+  }
+  &-input {
+    width: 95%;
+    color: black;
+    border-radius: 1.3rem;
+    border: none;
+    // background-color: $light-gray;
+    &:focus {
+      outline: none;
+    }
+  }
+  // &-error {
+  //   margin-left: 15px;
+  //   color: red;
+  //   font-size: 10px;
+  //   font-weight: 400;
+  // }
+}
+
+.is-invalid {
+  border: 1px solid rgba(255, 0, 0, 0.65);
+}
+.form-text {
+  // border: 1.5px solid rgba(128, 128, 128, 0.949);
+
+  border: transparent;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  // background-color: $light-gray;
+  width: 95%;
+  &::-webkit-input-placeholder {
+    /* Edge */
+    color: rgba(128, 128, 128, 0.574);
+    font-size: 2rem;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.bg-white {
+  background-color: white;
+}
+
+// editor Input
+
+.edit-input {
+  &-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & > label {
+      font-size: 1.8rem;
+      color: $secondry;
+      margin-top: 2rem;
+    }
+    & > p {
+      color: $secondry;
+      margin-top: 2rem;
+      margin-right: 1rem;
+    }
+  }
+  &-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    & > img {
+      position: absolute;
+      margin-right: -2rem;
+      height: 1.8rem;
+      width: 1.8rem;
+      border-radius: 50%;
+    }
+    & > input {
+      margin-top: 0.6rem;
+      background: transparent;
+      border-bottom: 1.5px solid $secondry;
+      border-left: none;
+      border-top: none;
+      border-right: none;
+      width: 100%;
+      outline: none;
+      color: $gray;
+      font-size: 1.6rem;
+      padding: 0.5rem 0rem;
+      accent-color: $secondry;
+      &:hover {
+        accent-color: $secondry;
+      }
+    }
+    &-deleteicon {
+      position: absolute;
+      right: 0.5rem;
+      & > * {
+        color: $gray;
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // & > div {
+  //   font-size: 1.5rem;
+  //   color: rgba(255, 0, 0, 0.885);
+  // }
+}
+
+.color-input {
+  border-bottom: 1.5px solid $secondry;
+  padding: 0rem;
+  & > input {
+    width: 80px;
+    height: 40px;
+    border-radius: 1rem;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  & > p {
+    color: $gray;
+    font-size: 1.4rem;
+  }
+}
+
+// for Color Input
+
+[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 1rem;
+}
+
+.padding-left-true {
+  & > input {
+    padding-left: 3rem;
+  }
+}

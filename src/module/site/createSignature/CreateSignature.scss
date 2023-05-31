@@ -1,0 +1,40 @@
+@import "../../../scss/variable";
+
+.createsignature {
+  &-container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    &-editor {
+      width: 48rem;
+      height: 90%;
+      background: #00c6f782;
+      padding: 3rem;
+      overflow-y: hidden;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        width: 7px;
+        // background-color: red;
+      }
+      // &::-webkit-scrollbar-track {
+      //   background: #00c6f782;
+      // }
+      &::-webkit-scrollbar-thumb {
+        background: $secondry;
+        cursor: pointer;
+      }
+    }
+    &-view {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: #00c6f75d;
+      &-container {
+        width: 80%;
+        margin: auto;
+      }
+    }
+  }
+}
