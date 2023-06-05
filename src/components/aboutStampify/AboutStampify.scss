@@ -1,15 +1,21 @@
 @import "../../scss/variable";
-
+@import "../../scss/mixins";
 .aboutitem {
   &-container {
     display: flex;
     align-items: center;
-    // justify-content: center;
     justify-content: space-between;
-
+    @include respond(tab-port) {
+      flex-direction: column;
+      padding: 5rem 0rem;
+    }
     &-content {
       margin-right: 12rem;
       width: 90rem;
+      @include respond(tab-port) {
+        width: 90%;
+        margin: auto;
+      }
     }
 
     &-image {

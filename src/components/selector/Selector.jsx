@@ -16,6 +16,7 @@ const Selector = (props) => {
             }}
           >
             <h6>{props.selected}</h6>
+            {/* <h6>Choose font</h6> */}
             <div className={`${props.className}-container-top-icon`}>
               <RiArrowDownSLine />
             </div>

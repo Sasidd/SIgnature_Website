@@ -51,6 +51,7 @@ import style from "./icons/style.svg";
 // Signature Images
 import pic from "./signaturecards/pic.avif";
 import signature1 from "./signaturecards/signature1.svg";
+import signature2 from "./signaturecards/signature2.svg";
 
 // icons for signature
 import call from "./signaturecards/icons/call.svg";
@@ -64,6 +65,30 @@ import youtube from "./icons/youtube.svg";
 import twitter from "./icons/twitter.svg";
 import linkedin from "./icons/linkedin.svg";
 
+// tabs icons
+
+import custom_button from "./appsTabIcons/custom_button.svg";
+import Disclaimer from "./appsTabIcons/Disclaimer.svg";
+import Download_app from "./appsTabIcons/Download_app.svg";
+import Give_feedback from "./appsTabIcons/Give_feedback.svg";
+import Green_footer from "./appsTabIcons/Green_footer.svg";
+import html from "./appsTabIcons/html.svg";
+import Image_gallery from "./appsTabIcons/Image_gallery.svg";
+import Instagram_gallery from "./appsTabIcons/Instagram_gallery.svg";
+import Join_a_webinar from "./appsTabIcons/Join_a_webinar.svg";
+import join_newsletter from "./appsTabIcons/join_newsletter.svg";
+import Online_payments from "./appsTabIcons/Online_payments.svg";
+import Online_schedular from "./appsTabIcons/Online_schedular.svg";
+import Post_a_job from "./appsTabIcons/Post_a_job.svg";
+import Predesinged_banners from "./appsTabIcons/Predesinged_banners.svg";
+import Quote from "./appsTabIcons/Quote.svg";
+import Sales_event from "./appsTabIcons/Sales_event.svg";
+import Social_button from "./appsTabIcons/Social_button.svg";
+import Styled_signoff from "./appsTabIcons/Styled_signoff.svg";
+import Upload_my_banner from "./appsTabIcons/Upload_my_banner.svg";
+import Video_conference from "./appsTabIcons/Video_conference.svg";
+import Video from "./appsTabIcons/Video.svg";
+
 // Edit tabs
 import tabapps from "./editorTab/apps.svg";
 import tabdesign from "./editorTab/design.svg";
@@ -72,6 +97,7 @@ import tabsocail from "./editorTab/socail.svg";
 import tabtemplates from "./editorTab/templates.svg";
 
 export {
+  //
   logo,
   logo_wthie,
   profile,
@@ -128,6 +154,7 @@ export {
   // Signature
   pic,
   signature1,
+  signature2,
 
   // Signature Icons
   call,
@@ -140,4 +167,27 @@ export {
   youtube,
   twitter,
   linkedin,
+
+  // apps tab icons
+  custom_button,
+  Disclaimer,
+  Download_app,
+  Give_feedback,
+  Green_footer,
+  html,
+  Image_gallery,
+  Instagram_gallery,
+  Join_a_webinar,
+  join_newsletter,
+  Online_payments,
+  Online_schedular,
+  Post_a_job,
+  Predesinged_banners,
+  Quote,
+  Sales_event,
+  Social_button,
+  Styled_signoff,
+  Upload_my_banner,
+  Video,
+  Video_conference,
 };

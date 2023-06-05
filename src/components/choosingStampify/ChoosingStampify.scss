@@ -1,5 +1,5 @@
 @import "../../scss/variable";
-
+@import "../../scss//mixins";
 .choosingstampify {
   margin-top: -10rem;
   background-color: #00cbfe6b;
@@ -7,13 +7,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  @include respond(tab-port) {
+    margin-top: 4rem;
+  }
   &-container {
     z-index: 100;
+
     &-images {
       display: flex;
       align-items: center;
       justify-content: center;
+      @include respond(tab-port) {
+        flex-direction: column;
+      }
       & > img {
         height: 18.4rem;
         width: 38.2rem;
@@ -21,6 +27,9 @@
       & > * {
         &:first-child {
           margin-right: -6rem;
+          @include respond(tab-port) {
+            margin-right: 0rem;
+          }
         }
       }
     }
@@ -29,6 +38,9 @@
 
 .stampify-item-container {
   z-index: 100000000;
+  @include respond(tab-port) {
+    padding: 0rem 3rem;
+  }
 }
 
 // Sub compoennts

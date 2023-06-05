@@ -1,8 +1,10 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useRef } from "react";
 import FormInput from "../FormInput/FormInput";
 import Heading from "../heading/Heading";
 import { Formik } from "formik";
 import { EditerContext } from "../../AppContext";
+import { FiUpload } from "react-icons/fi";
+import { IoIosAddCircleOutline } from "react-icons/io";
 
 const General = () => {
   const { generalFields, setGeneralFields } = useContext(EditerContext);
@@ -15,34 +17,15 @@ const General = () => {
     setGeneralFields(oldFields);
   };
 
-  // const re =
-  //   /^((ftp|http|https):\/\/)?(www.)?(?!.*(ftp|http|https|www.))[a-zA-Z0-9_-]+(\.[a-zA-Z]+)+((\/)[\w#]+)*(\/\w+\?[a-zA-Z0-9_]+=\w+(&[a-zA-Z0-9_]+=\w+)*)?$/gm;
-  // const validation = Yup.object({
-  //   name: Yup.string()
-  //     .min(2, "Must be 2 character")
-  //     .max(50, "Must be 50 characters or less")
-  //     .required("Required"),
-  //   title: Yup.string()
-  //     .min(2, "Must be 2 character")
-  //     .max(50, "Must be 50 characters or less")
-  //     .required("Required"),
-  //   company: Yup.string()
-  //     .min(2, "Must be 2 character")
-  //     .max(50, "Must be 50 characters or less")
-  //     .required("Required"),
-  //   email: Yup.string().email("Email is invalid").required("Email is required"),
-  //   phone: Yup.number()
-  //     .typeError("That doesn't look like a phone number")
-  //     .positive("A phone number can't start with a minus")
-  //     .integer("A phone number can't include a decimal point")
-  //     .min(8)
-  //     .required("A phone number is required"),
-  //   websitelink: Yup.string().matches(re, "URL is not valid"),
-  //   address: Yup.string()
-  //     .min(2, "Must be 2 character")
-  //     .max(50, "Must be 50 characters or less")
-  //     .required("Required"),
-  // });
+  const [image, setImage] = useState();
+  const imageRef = useRef();
+  const onImageChange = (event) => {
+    if (event.target.files && event.target.files[0]) {
+      let img = event.target.files[0];
+      setImage(URL.createObjectURL(img));
+    }
+  };
+
   return (
     <>
       <div className="generaleditor">
@@ -84,6 +67,32 @@ const General = () => {
                       />
                     );
                   })}
+
+                  <div className="uploadimag-btn">
+                    <button onClick={() => imageRef.current.click()}>
+                      <FiUpload />
+                      Upload Image
+                    </button>
+                  </div>
+
+                  {image && <img src={image} alt="service" />}
+
+                  <div style={{ display: "none" }}>
+                    <input
+                      type="file"
+                      name="myImage"
+                      ref={imageRef}
+                      onChange={onImageChange}
+                    />
+                  </div>
+
+                  <div className="addnew-inputfield">
+                    <button>
+                      <IoIosAddCircleOutline />
+                      Add a Field
+                    </button>
+                  </div>
+                  <div className="mt-4">.</div>
                 </>
               )}
             </Formik>
@@ -95,4 +104,3 @@ const General = () => {
 };
 
 export default General;
-

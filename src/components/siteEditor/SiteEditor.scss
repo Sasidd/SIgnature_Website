@@ -56,3 +56,74 @@
     }
   }
 }
+
+// Apps
+
+.apps {
+  &-container {
+    &-grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 1.5rem;
+    }
+  }
+}
+.tab_button_app {
+  & > button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 0.8rem;
+    padding: 1.8rem 0rem;
+    background: rgba(248, 249, 251, 0.5);
+    border: 1px solid #667b96;
+    cursor: pointer;
+    & > img {
+      height: 2rem;
+      width: 2rem;
+      margin-right: 1rem;
+      margin-left: 2rem;
+    }
+    transition: 0.3s ease-in-out;
+    &:hover {
+      background: #00c6f757;
+    }
+  }
+}
+
+// General BTN
+.uploadimag-btn {
+  text-align: center;
+  margin: 4rem 0rem;
+  & > button {
+    background-color: $secondry;
+    color: $primary;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    & > * {
+      &:first-child {
+        margin-right: 1rem;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.addnew-inputfield {
+  & > button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: $secondry;
+    cursor: pointer;
+    & > * {
+      &:first-child {
+        margin-right: 1rem;
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
