@@ -3,7 +3,6 @@ import FormInput from "../FormInput/FormInput";
 import Selector from "../selector/Selector";
 
 import { Formik, Form } from "formik";
-import * as Yup from "yup";
 import Heading from "../heading/Heading";
 import { shape_radius, shape_rounded, shape_squre } from "../../assests";
 import Divider from "../divider/Divider";
@@ -46,7 +45,6 @@ const Design = () => {
                 ImageLink: null,
               }}
               validateOnMount
-              // validationSchema={validation}
               onSubmit={(values, { resetForm }) => {
                 console.log(values);
                 resetForm({ values: "" });
