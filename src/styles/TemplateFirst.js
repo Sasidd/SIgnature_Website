@@ -19,6 +19,10 @@ export const CardContainerImage = styled.div`
 
 export const CardContainerContent = styled.div`
   padding: 0rem 3rem;
+
+
+
+  
 `;
 
 export const CardHeadings = styled.div`

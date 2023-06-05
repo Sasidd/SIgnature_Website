@@ -23,9 +23,25 @@
 
   &-container {
     display: flex;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
     &-content {
       margin-top: 1rem;
       margin-right: 2rem;
+      @include respond(tab-port) {
+        padding: 2rem 3rem;
+      }
+    }
+    &-img {
+      @include respond(tab-port) {
+        width: 100%;
+        text-align: center;
+        margin-top: 5rem;
+        & > img {
+          width: 80%;
+        }
+      }
     }
   }
 }
@@ -81,5 +97,9 @@
   &-text {
     width: 73.5rem;
     margin: auto;
+
+    @include respond(tab-port) {
+      width: 90%;
+    }
   }
 }

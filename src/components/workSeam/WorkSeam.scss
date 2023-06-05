@@ -1,4 +1,4 @@
-
+@import "../../scss/mixins";
 .seam {
   margin-top: 3.2rem;
 }
@@ -10,6 +10,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @include respond(tab-port) {
+        flex-direction: column;
+      }
       & > * {
         &:not(:last-child) {
           margin-right: 0.8rem;
@@ -21,6 +24,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @include respond(tab-port) {
+        flex-direction: column;
+      }
       & > * {
         &:not(:last-child) {
           margin-right: 0.8rem;
@@ -38,6 +44,11 @@
   padding: 1.3rem 2.4rem;
   display: flex;
   align-items: center;
+
+  @include respond(tab-port) {
+    width: 20rem;
+    margin-top: 1rem;
+  }
   & > img {
     height: 2.5rem;
     width: 2.5rem;

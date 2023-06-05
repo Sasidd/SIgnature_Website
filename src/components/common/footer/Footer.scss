@@ -1,16 +1,20 @@
 @import "../../../scss/variable";
-
+@import "../../../scss/mixins";
 .footer {
-  // margin-top: 17rem;
   background-color: $secondry;
   &-container {
     padding: 6.5rem 0rem;
     display: flex;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
     & > * {
       &:not(:last-child) {
         margin-right: 8.4rem;
       }
     }
+
     &-icons {
       & > img {
         height: 3rem;
@@ -43,6 +47,9 @@
 // Footer item {
 
 .footeritem {
+  @include respond(tab-port) {
+    margin-top: 3rem;
+  }
   & > h5 {
     font-size: 2rem;
     color: white;
