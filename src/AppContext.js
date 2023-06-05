@@ -7,6 +7,7 @@ const AppContext = (props) => {
   const [generalFields, setGeneralFields] = useState(generalFieldsData);
   const [socialFields, setSocialFields] = useState(socialFieldsData);
   const [design, setDesign] = useState({});
+  console.log(generalFields);
   return (
     <>
       <EditerContext.Provider

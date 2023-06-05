@@ -23,7 +23,6 @@ import {
   Analytics,
   CompanyDetail,
   Domain,
-  Home,
   PersonalDetail,
 } from "./module/panel/dashboard";
 import {
@@ -59,7 +58,7 @@ const Routess = () => {
           {/* Settings Layout */}
 
           <Route path="" element={<SettingsLayout />}>
-            <Route path="/home" element={<Home />} />
+            {/* <Route path="/home" element={<Home />} /> */}
             <Route path="/home/edit_profile" element={<EditProfile />} />
             <Route path="/home/manage_users" element={<ManageUsers />} />
             <Route path="/home/plan" element={<PlainandBilling />} />

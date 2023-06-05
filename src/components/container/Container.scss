@@ -62,8 +62,6 @@
 
   // main container
   &-main {
-
-
     @include respond(big-desktop) {
       width: 1550px;
       // background-color:rgba(255, 0, 0, 0.304);

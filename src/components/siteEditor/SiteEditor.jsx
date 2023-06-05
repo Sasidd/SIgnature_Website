@@ -17,7 +17,6 @@ import Templates from "./Templates";
 import Social from "./Social";
 import Apps from "./Apps";
 
-
 const SiteEditor = () => {
   const [tab, setTab] = useState();
 
@@ -57,7 +56,8 @@ const SiteEditor = () => {
         <>
           {/* <Design /> */}
           {/* <Social /> */}
-          <General />
+          {/* <General /> */}
+          <Apps />
         </>
       );
     }
@@ -96,6 +96,8 @@ const SiteEditor = () => {
           {/* <TabContent /> */}
           {/* <Social /> */}
           {/* <Templates /> */}
+          {/* <Apps /> */}
+          
         </div>
       </div>
     </>

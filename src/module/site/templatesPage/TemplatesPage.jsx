@@ -1,5 +1,9 @@
 import React from "react";
-import { Signature6, Signature1 } from "../../../components/signatures";
+import {
+  Signature6,
+  Signature1,
+  Signature2,
+} from "../../../components/signatures";
 
 const Templates = () => {
   return (
@@ -9,6 +13,8 @@ const Templates = () => {
           <Signature6 />
           <br />
           <Signature1 />
+          <br />
+          <Signature2 />
         </div>
       </div>
     </>

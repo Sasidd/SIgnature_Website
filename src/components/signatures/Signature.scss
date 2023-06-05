@@ -72,6 +72,32 @@
 }
 
 ///////////
+// Signature 2
+////////////
+
+.signature2 {
+  &-container {
+    background-color: white;
+    padding: 2.1rem;
+    display: flex;
+    align-items: center;
+    & > img {
+      width: 12.6rem;
+      height: 12.6rem;
+      border-radius: 50%;
+    }
+    &-content {
+      background-color: red;
+    }
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+  }
+}
+
+///////////
 // Signature 6
 ////////////
 

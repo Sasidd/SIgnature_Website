@@ -15,34 +15,6 @@ const General = () => {
     setGeneralFields(oldFields);
   };
 
-  // const re =
-  //   /^((ftp|http|https):\/\/)?(www.)?(?!.*(ftp|http|https|www.))[a-zA-Z0-9_-]+(\.[a-zA-Z]+)+((\/)[\w#]+)*(\/\w+\?[a-zA-Z0-9_]+=\w+(&[a-zA-Z0-9_]+=\w+)*)?$/gm;
-  // const validation = Yup.object({
-  //   name: Yup.string()
-  //     .min(2, "Must be 2 character")
-  //     .max(50, "Must be 50 characters or less")
-  //     .required("Required"),
-  //   title: Yup.string()
-  //     .min(2, "Must be 2 character")
-  //     .max(50, "Must be 50 characters or less")
-  //     .required("Required"),
-  //   company: Yup.string()
-  //     .min(2, "Must be 2 character")
-  //     .max(50, "Must be 50 characters or less")
-  //     .required("Required"),
-  //   email: Yup.string().email("Email is invalid").required("Email is required"),
-  //   phone: Yup.number()
-  //     .typeError("That doesn't look like a phone number")
-  //     .positive("A phone number can't start with a minus")
-  //     .integer("A phone number can't include a decimal point")
-  //     .min(8)
-  //     .required("A phone number is required"),
-  //   websitelink: Yup.string().matches(re, "URL is not valid"),
-  //   address: Yup.string()
-  //     .min(2, "Must be 2 character")
-  //     .max(50, "Must be 50 characters or less")
-  //     .required("Required"),
-  // });
   return (
     <>
       <div className="generaleditor">
@@ -95,4 +67,3 @@ const General = () => {
 };
 
 export default General;
-
