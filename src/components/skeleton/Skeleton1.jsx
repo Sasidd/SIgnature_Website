@@ -1,8 +1,16 @@
 import React from "react";
 import Skeleton from "@mui/material/Skeleton";
 import Stack from "@mui/material/Stack";
+import { useContext } from "react";
+import { EditerContext } from "../../AppContext";
 
 const Skeleton1 = () => {
+  const {switching , setSwitching} = useContext(EditerContext)
+  const handleSkeletonClick = () => {
+    // Handle the click event here
+    setSwitching(true)
+    console.log("Switched to True");
+  };
   return (
     <>
       <Stack
@@ -19,6 +27,7 @@ const Skeleton1 = () => {
 
             alignItems: "center",
           }}
+          onClick={handleSkeletonClick}
         >
           {/* Profile picture */}
           <div style={{ marginLeft: "2rem" }}>
