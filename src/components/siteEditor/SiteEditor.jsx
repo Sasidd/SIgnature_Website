@@ -97,7 +97,6 @@ const SiteEditor = () => {
           {/* <Social /> */}
           {/* <Templates /> */}
           {/* <Apps /> */}
-          
         </div>
       </div>
     </>
