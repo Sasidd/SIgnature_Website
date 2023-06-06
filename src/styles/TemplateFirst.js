@@ -10,8 +10,8 @@ export const CardContainerImage = styled.div`
   border-right: 1.5px solid black;
   padding: 2rem 3rem;
   & > img {
-    width: 12rem;
-    height: 12rem;
+   // width: 12rem;
+  //  height: 12rem;
     border-radius: 50%;
     object-fit: cover;
   }

@@ -7,6 +7,7 @@ const AppContext = (props) => {
   const [generalFields, setGeneralFields] = useState(generalFieldsData);
   const [socialFields, setSocialFields] = useState(socialFieldsData);
   const [design, setDesign] = useState({});
+  const [img,setImg]= useState('')
   console.log(generalFields);
   return (
     <>
@@ -18,6 +19,8 @@ const AppContext = (props) => {
           setSocialFields,
           design,
           setDesign,
+          img,
+          setImg
         }}
       >
         {props.children}
