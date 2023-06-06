@@ -91,8 +91,8 @@ const SiteEditor = () => {
           </TabBtn>
         </div>
         <div className="siteditor-content">
-          {/* <General /> */}
-          <Design />
+          <General />
+          {/* <Design /> */}
           {/* <TabContent /> */}
           {/* <Social /> */}
           {/* <Templates /> */}

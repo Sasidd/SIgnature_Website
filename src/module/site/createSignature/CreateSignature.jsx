@@ -13,7 +13,7 @@ import { useState } from "react";
 
 const CreateSignature = () => {
   const { generalFields } = useContext(EditerContext);
-  // console.log(generalFields);
+  console.log(generalFields);
 
   return (
     <>

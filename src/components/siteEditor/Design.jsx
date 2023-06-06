@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import FormInput from "../FormInput/FormInput";
 import Selector from "../selector/Selector";
 
-import { Formik, Form } from "formik";
+import { Formik, Form , Field } from "formik";
 import Heading from "../heading/Heading";
 import { shape_radius, shape_rounded, shape_squre } from "../../assests";
 import Divider from "../divider/Divider";
@@ -21,6 +21,7 @@ const Design = () => {
   const [templatecolor, setTemplateColor] = useState("");
   const [iconcolor, setIconColor] = useState("");
   const [linecolor, setLineColor] = useState("");
+ // const [font,setFont]=useState("")
 
   const { design, setDesign } = useContext(EditerContext);
 
@@ -28,8 +29,14 @@ const Design = () => {
     setDesign({
       ...design,
       [e.target.name]: e.target.value,
+      selectFont: selectFont, // Include selectFont and selectBorder here
+      selectBorder: selectBorder,
     });
   };
+
+  useEffect(() => {
+    handleDesignChange({ target: { name: "SelectFont", value: selectFont } });
+  }, [selectFont , selectBorder]);
   return (
     <>
       <div className="designeditor">
@@ -38,6 +45,7 @@ const Design = () => {
           <div className="designeditor-container-inputs">
             <Formik
               initialValues={{
+                SelectFont:selectFont,
                 FontSize: fontrange,
                 Template_Color: templatecolor,
                 LineColor: linecolor,
@@ -53,18 +61,19 @@ const Design = () => {
               {(formik) => (
                 <Form>
                   <Selector
-                    name="FntStyle"
+                    name="SelectFont"
                     data={fonts}
                     className="editselector"
                     label="Font family"
                     selected={selectFont}
                     setSelected={setSelectFont}
+                    value={selectFont}
                     onChange={(e) => {
-                      formik.handleChange(e);
-                      console.log(e.target.value);
+                      // formik.handleChange(e)
+                      // setFont(e.target.value)
+                      console.log("ss");
                     }}
                   />
-
                   <FormInput
                     label="Font Size"
                     name="FontSize"
@@ -92,7 +101,7 @@ const Design = () => {
                     onChange={(e) => {
                       formik.handleChange(e);
                       setTemplateColor(e.target.value);
-                      console.log(e.target.value);
+                      console.log(e.target);
                       handleDesignChange(e);
                     }}
                     color={templatecolor}
