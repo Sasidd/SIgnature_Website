@@ -54,10 +54,7 @@ const SiteEditor = () => {
     } else {
       return (
         <>
-          {/* <Design /> */}
-          {/* <Social /> */}
-          {/* <General /> */}
-          <Apps />
+          <General />
         </>
       );
     }
@@ -91,11 +88,11 @@ const SiteEditor = () => {
           </TabBtn>
         </div>
         <div className="siteditor-content">
-          {/* <General /> */}
-          {/* <Design /> */}
-          {/* <TabContent /> */}
-          {/* <Social /> */}
-          <Templates />
+
+
+          
+          {TabContent()}
+
           {/* <Apps /> */}
         </div>
       </div>

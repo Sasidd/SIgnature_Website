@@ -1,7 +1,7 @@
 import React from "react";
 import Heading from "../heading/Heading";
 import Skeleton1 from "../skeleton/Skeleton1";
-import Temp1 from "./Temp1";
+import Skeleton2 from "../skeleton/Skeleton2";
 const Templates = () => {
   return (
     <>
@@ -9,7 +9,8 @@ const Templates = () => {
 
       <div>
         <Skeleton1 />
-        <Temp1/>
+        {/* <Temp1 /> */}
+        <Skeleton2 />
       </div>
     </>
   );
