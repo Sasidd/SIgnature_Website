@@ -64,7 +64,6 @@ const SiteEditor = () => {
     <>
       <div className="siteditor">
         <div className="siteditor-header">
-          {/* <Slider {...settings}></Slider> */}
           <TabBtn icon={<BiMenuAltLeft />} onClick={() => setTab("general")}>
             General
           </TabBtn>
@@ -87,14 +86,7 @@ const SiteEditor = () => {
             Apps
           </TabBtn>
         </div>
-        <div className="siteditor-content">
-
-
-          
-          {TabContent()}
-
-          {/* <Apps /> */}
-        </div>
+        <div className="siteditor-content">{TabContent()}</div>
       </div>
     </>
   );
