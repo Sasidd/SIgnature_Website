@@ -7,7 +7,7 @@
   background-position: center;
   padding-bottom: 20rem;
 
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     background-image: none;
   }
 }
@@ -23,7 +23,7 @@
 
   &-container {
     display: flex;
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       flex-direction: column;
     }
     &-content {
@@ -34,7 +34,7 @@
       }
     }
     &-img {
-      @include respond(tab-port) {
+      @include respond(tab-land) {
         width: 100%;
         text-align: center;
         margin-top: 5rem;

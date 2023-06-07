@@ -1,20 +1,29 @@
 import React, { useContext, useState, useRef } from "react";
+import * as Yup from "yup";
+import { Formik, Form } from "formik";
 import FormInput from "../FormInput/FormInput";
 import Heading from "../heading/Heading";
-import { Formik } from "formik";
+import Modal from "../modal/Modal";
 import { EditerContext } from "../../AppContext";
 import { FiUpload } from "react-icons/fi";
 import { IoIosAddCircleOutline } from "react-icons/io";
+import Button from "../button/Button";
+import Selector from "../selector/Selector";
 
 const General = () => {
-  const { generalFields, setGeneralFields, img, setImg } = useContext(EditerContext);
+  // Modal
+
+  const [alert, setAlert] = useState(false);
+  const [selectField, setSelectField] = useState("Choose Type");
+
+  const { generalFields, setGeneralFields, setImg } = useContext(EditerContext);
   const [inputFields, setInputFields] = useState(generalFields);
 
   const handleChange = (event, index) => {
     const oldFields = [...inputFields];
     oldFields[index].value = event.target.value;
-    setInputFields(oldFields,image);
-    setGeneralFields(oldFields,image);
+    setInputFields(oldFields, image);
+    setGeneralFields(oldFields, image);
   };
 
   const [image, setImage] = useState();
@@ -22,14 +31,76 @@ const General = () => {
   const onImageChange = (event) => {
     if (event.target.files && event.target.files[0]) {
       let img = event.target.files[0];
-      // setImage(URL.createObjectURL(img));
-      // console.log(image);
-      setImg(URL.createObjectURL(img))
+      setImg(URL.createObjectURL(img));
     }
   };
 
+  // vaidations
+
+  const validation = Yup.object({
+    label: Yup.string()
+      .min(2, "Must be 2 character")
+      .max(25, "Must be 25 characters or less")
+      .required("Lable is required"),
+  });
+
+  const inputType = ["Text", "Phone", "Email", "URL"];
+
   return (
     <>
+      {alert ? (
+        <Modal action={alert}>
+          <div className="modal-addnew-general-fields">
+            <div className="modal-addnew-general-fields-heading">
+              <h3>Select Add Input Field</h3>
+            </div>
+            <Formik
+              initialValues={{
+                label: "",
+              }}
+              validateOnMount
+              validationSchema={validation}
+              onSubmit={(values, { resetForm }) => {
+                console.log(values);
+                resetForm({ values: "" });
+              }}
+            >
+              {(formik) => (
+                <Form>
+                  <FormInput
+                    label="Enter Label"
+                    name="label"
+                    type="text"
+                    className="edit-input"
+                    margin="m-4"
+                  />
+                  {/* <FormInput
+                    label="Enter  your password"
+                    name="password"
+                    type="password"
+                  /> */}
+
+                  <Selector
+                    name="SelectFont"
+                    data={inputType}
+                    className="editselector"
+                    label="Font family"
+                    selected={selectField}
+                    setSelected={setSelectField}
+                    value={selectField}
+                  />
+                  <Button className="btn-login rounded center mt-2 ">
+                    Add Input
+                  </Button>
+                </Form>
+              )}
+            </Formik>
+          </div>
+        </Modal>
+      ) : (
+        ""
+      )}
+
       <div className="generaleditor">
         <div className="generaleditor-container">
           <Heading className="editor">Enter your signature details</Heading>
@@ -42,7 +113,7 @@ const General = () => {
                 company: "",
                 phone: "",
                 websitelink: "",
-                address: ""
+                address: "",
               }}
               validateOnMount
               // validationSchema={validation}
@@ -89,7 +160,11 @@ const General = () => {
                   </div>
 
                   <div className="addnew-inputfield">
-                    <button>
+                    <button
+                      onClick={() => {
+                        setAlert(!alert);
+                      }}
+                    >
                       <IoIosAddCircleOutline />
                       Add a Field
                     </button>

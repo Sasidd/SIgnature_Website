@@ -36,6 +36,7 @@ const Apps = () => {
             </div>
           </div>
         </div>
+        <div className="mt-4">.</div>
       </div>
     </>
   );

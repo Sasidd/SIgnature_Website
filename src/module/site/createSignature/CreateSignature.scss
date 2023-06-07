@@ -1,10 +1,15 @@
 @import "../../../scss/variable";
+@import "../../../scss/mixins";
 
 .createsignature {
   &-container {
     margin: auto;
     width: 80%;
     display: flex;
+    @include respond(tab-port) {
+      flex-direction: column;
+      width: 90%;
+    }
     &-editor {
       width: 48rem;
       height: 90%;
@@ -14,14 +19,15 @@
       overflow-y: scroll;
       &::-webkit-scrollbar {
         width: 7px;
-        // background-color: red;
       }
-      // &::-webkit-scrollbar-track {
-      //   background: #00c6f782;
-      // }
+
       &::-webkit-scrollbar-thumb {
         background: $secondry;
         cursor: pointer;
+      }
+      @include respond(tab-port) {
+        width: 92%;
+        height: 100%;
       }
     }
     &-view {
@@ -34,6 +40,12 @@
       &-container {
         width: 80%;
         margin: auto;
+        @include respond(tab-port) {
+          width: 90%;
+        }
+      }
+      @include respond(tab-port) {
+        width: 100%;
       }
     }
   }

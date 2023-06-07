@@ -68,11 +68,6 @@ const Design = () => {
                     selected={selectFont}
                     setSelected={setSelectFont}
                     value={selectFont}
-                    onChange={(e) => {
-                      // formik.handleChange(e)
-                      // setFont(e.target.value)
-                      console.log("ss");
-                    }}
                   />
                   <FormInput
                     label="Font Size"

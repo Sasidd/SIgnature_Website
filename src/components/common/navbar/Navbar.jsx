@@ -88,23 +88,28 @@ const Mobile = () => {
         <div className="mobile">
           <Container className="md">
             <nav className="mobile-container-menus">
-              <div className="mobile-container-menus-input m-3">
-                <input type="text" placeholder="Browser" />
-                <BiSearch />
-              </div>
               <div className="mobile-container-menus-item align-item-center">
-                <Link to="support">
-                  <p>Support</p>
-                </Link>
-                <Link to="/aboutus">
+                <NavLink to="/">
+                  <p>Home</p>
+                </NavLink>
+                <NavLink to="/create-signature">
+                  <p>Create your free signature</p>
+                </NavLink>
+                <NavLink to="/templates">
+                  <p>Templates</p>
+                </NavLink>
+                <NavLink to="/privacy-policy">
+                  <p>Privacy Policy</p>
+                </NavLink>
+                <NavLink to="/contactus">
+                  <p>Contact us</p>
+                </NavLink>
+                <NavLink to="/">
+                  <p>Pricing</p>
+                </NavLink>
+                <NavLink to="/aboutus">
                   <p>About us</p>
-                </Link>
-                <Link to="/vender-signin">
-                  <p>Vendor</p>
-                </Link>
-                <Link to="/customersignin">
-                  <p>Customer</p>
-                </Link>
+                </NavLink>
               </div>
             </nav>
           </Container>

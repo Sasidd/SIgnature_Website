@@ -19,8 +19,14 @@ html {
   }
   @include respond(tab-land) {
     // width < 1200?
-    font-size: 52.25%; //1 rem = 9px, 9/16 = 50%
+    font-size: 45%; //1 rem = 9px, 9/16 = 50%
   }
+
+  @include respond(laptop) {
+    // width < 1200?
+    font-size: 50%; //1 rem = 9px, 9/16 = 50%
+  }
+
   @include respond(big-desktop) {
     font-size: 53%;
   }

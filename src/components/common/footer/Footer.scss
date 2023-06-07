@@ -2,6 +2,7 @@
 @import "../../../scss/mixins";
 .footer {
   background-color: $secondry;
+
   &-container {
     padding: 6.5rem 0rem;
     display: flex;
@@ -60,6 +61,9 @@
     flex-direction: column;
     margin-top: 1.5rem;
     width: 23rem;
+    @include respond(laptop) { 
+      width: 100%;
+    }
     & > a {
       font-size: 2rem;
       color: $gray-dark;

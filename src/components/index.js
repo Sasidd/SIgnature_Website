@@ -15,7 +15,8 @@ export { default as AboutStampify } from "./aboutStampify/AboutStampify";
 export { default as Input } from "./Input/Input";
 export { default as ScreenView } from "./screenview/ScreenView";
 
+export { default as Modal } from "./modal/Modal";
 
 // Skeleton
 
-export {default as Skeleton1} from './skeleton/Skeleton1'
+export { default as Skeleton1 } from "./skeleton/Skeleton1";
