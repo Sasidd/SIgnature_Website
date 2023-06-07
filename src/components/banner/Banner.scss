@@ -6,7 +6,7 @@
     justify-content: space-between;
     width: 85%;
     margin: auto;
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       flex-direction: column;
     }
     &-content {
@@ -23,15 +23,15 @@
     &-img {
       height: 684px;
 
-      @include respond(tab-port) {
+      @include respond(tab-land) {
+        margin-bottom: -10rem;
         width: 100%;
         height: auto;
-        margin-top: 5rem;
       }
       & > img {
         height: 804px;
         width: 82rem;
-        @include respond(tab-port) {
+        @include respond(tab-land) {
           width: 100%;
           height: auto;
           margin: auto;

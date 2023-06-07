@@ -7,14 +7,15 @@ import { FiUpload } from "react-icons/fi";
 import { IoIosAddCircleOutline } from "react-icons/io";
 
 const General = () => {
-  const { generalFields, setGeneralFields, img, setImg } = useContext(EditerContext);
+  const { generalFields, setGeneralFields, img, setImg } =
+    useContext(EditerContext);
   const [inputFields, setInputFields] = useState(generalFields);
 
   const handleChange = (event, index) => {
     const oldFields = [...inputFields];
     oldFields[index].value = event.target.value;
-    setInputFields(oldFields,image);
-    setGeneralFields(oldFields,image);
+    setInputFields(oldFields, image);
+    setGeneralFields(oldFields, image);
   };
 
   const [image, setImage] = useState();
@@ -22,9 +23,7 @@ const General = () => {
   const onImageChange = (event) => {
     if (event.target.files && event.target.files[0]) {
       let img = event.target.files[0];
-      // setImage(URL.createObjectURL(img));
-      // console.log(image);
-      setImg(URL.createObjectURL(img))
+      setImg(URL.createObjectURL(img));
     }
   };
 
@@ -42,7 +41,7 @@ const General = () => {
                 company: "",
                 phone: "",
                 websitelink: "",
-                address: ""
+                address: "",
               }}
               validateOnMount
               // validationSchema={validation}

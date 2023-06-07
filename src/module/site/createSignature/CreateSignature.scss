@@ -14,11 +14,8 @@
       overflow-y: scroll;
       &::-webkit-scrollbar {
         width: 7px;
-        // background-color: red;
       }
-      // &::-webkit-scrollbar-track {
-      //   background: #00c6f782;
-      // }
+  
       &::-webkit-scrollbar-thumb {
         background: $secondry;
         cursor: pointer;

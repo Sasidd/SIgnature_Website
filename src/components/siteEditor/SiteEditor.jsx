@@ -1,8 +1,6 @@
 import { useState } from "react";
 import "./SiteEditor.scss";
 
-import Slider from "react-slick";
-
 // icons
 import { BiMenuAltLeft } from "react-icons/bi";
 import { AiOutlineAntDesign } from "react-icons/ai";
@@ -19,8 +17,9 @@ import Apps from "./Apps";
 
 const SiteEditor = () => {
   const [tab, setTab] = useState();
+  // Slider Settings
 
-  const TabContent = () => {
+  const tabContent = () => {
     if (tab === "general") {
       return (
         <>
@@ -64,29 +63,31 @@ const SiteEditor = () => {
     <>
       <div className="siteditor">
         <div className="siteditor-header">
-          <TabBtn icon={<BiMenuAltLeft />} onClick={() => setTab("general")}>
-            General
-          </TabBtn>
-          <TabBtn
-            icon={<AiOutlineAntDesign />}
-            onClick={() => setTab("design")}
-          >
-            Design
-          </TabBtn>
-          <TabBtn icon={<TbTemplate />} onClick={() => setTab("templates")}>
-            Template
-          </TabBtn>
-          <TabBtn
-            icon={<IoShareSocialSharp />}
-            onClick={() => setTab("social")}
-          >
-            Social
-          </TabBtn>
-          <TabBtn icon={<TbApps />} onClick={() => setTab("apps")}>
-            Apps
-          </TabBtn>
+          <div className="siteditor-header-tabs">
+            <TabBtn icon={<BiMenuAltLeft />} onClick={() => setTab("general")}>
+              General
+            </TabBtn>
+            <TabBtn
+              icon={<AiOutlineAntDesign />}
+              onClick={() => setTab("design")}
+            >
+              Design
+            </TabBtn>
+            <TabBtn icon={<TbTemplate />} onClick={() => setTab("templates")}>
+              Template
+            </TabBtn>
+            <TabBtn
+              icon={<IoShareSocialSharp />}
+              onClick={() => setTab("social")}
+            >
+              Social
+            </TabBtn>
+            <TabBtn icon={<TbApps />} onClick={() => setTab("apps")}>
+              Apps
+            </TabBtn>
+          </div>
         </div>
-        <div className="siteditor-content">{TabContent()}</div>
+        <div className="siteditor-content">{tabContent()}</div>
       </div>
     </>
   );

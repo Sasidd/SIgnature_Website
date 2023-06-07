@@ -3,15 +3,29 @@
 .siteditor {
   height: 90vh;
   &-header {
-    display: flex;
-    align-items: center;
-    background-color: $secondry;
     overflow-x: hidden;
-    // overflow-x: scroll;
-    border-radius: 3rem;
-    & > * {
-      &:not(:last-child) {
-        margin-right: 1rem;
+    overflow-x: scroll;
+    padding-bottom: 0.9rem;
+    &::-webkit-scrollbar {
+      width: 3px;
+      height: 6px;
+      cursor: pointer;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $secondry;
+      cursor: pointer;
+    }
+
+    &-tabs {
+      display: flex;
+      align-items: center;
+      background-color: $secondry;
+      border-radius: 3rem;
+      width: 75rem;
+      & > * {
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
       }
     }
   }
