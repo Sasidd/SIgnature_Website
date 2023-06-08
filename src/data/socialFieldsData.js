@@ -6,6 +6,14 @@ import {
   e_youtube,
 } from "../assests";
 
+// import {
+//   BiLogoFacebook,
+//   BiLogoYoutube,
+//   BiLogoInstagramAlt,
+//   BiLogoTwitter,
+//   BiLogoGithub,
+// } from "react-icons/bi";
+
 export const socialFieldsData = [
   {
     id: 1,
@@ -14,6 +22,7 @@ export const socialFieldsData = [
     type: "text",
     icon: e_facebook,
     value: "",
+    // socialIcon: <BiLogoFacebook />,
   },
   {
     id: 2,
@@ -22,6 +31,7 @@ export const socialFieldsData = [
     type: "text",
     icon: e_youtube,
     value: "",
+    // socialIcon: <BiLogoYoutube />,
   },
   {
     id: 3,
@@ -30,6 +40,7 @@ export const socialFieldsData = [
     type: "text",
     icon: e_insta,
     value: "",
+    // socialIcon: <BiLogoInstagramAlt />,
   },
   {
     id: 4,
@@ -38,6 +49,7 @@ export const socialFieldsData = [
     type: "text",
     icon: e_twitter,
     value: "",
+    // socialIcon: <BiLogoTwitter />,
   },
 
   {
@@ -47,5 +59,6 @@ export const socialFieldsData = [
     type: "text",
     icon: e_github,
     value: "",
+    // socialIcon: <BiLogoGithub />,
   },
 ];

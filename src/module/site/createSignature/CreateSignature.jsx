@@ -10,7 +10,6 @@ import {
 import { TemplateFirst } from "../../../components/templates";
 import TemplateSecond from "../../../components/templates/TemplateSecond";
 import { EditerContext } from "../../../AppContext";
-import { useState } from "react";
 
 const CreateSignature = () => {
   const { generalFields , switching } = useContext(EditerContext);
