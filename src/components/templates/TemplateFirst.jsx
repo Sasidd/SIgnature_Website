@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { pic } from "../../assests";
 import {
   CardContainer,
@@ -9,9 +9,18 @@ import {
 } from "../../styles/TemplateFirst";
 import { EditerContext } from "../../AppContext";
 const TemplateFirst = (props) => {
-  const { design, img , setImg } = useContext(EditerContext);
+  const { design, img , setImg , addmore, setAddMore } = useContext(EditerContext);
   console.log(design)
   console.log(img);
+  console.log(addmore);
+
+  // useEffect(() => {
+  //   // Add 'addmore' as a dependency and perform any necessary actions
+  //   // when the 'addmore' array changes.
+  //   // This code will execute whenever 'addmore' is updated.
+  //   // You can fetch new data or perform any other necessary operations.
+  // }, [addmore]);
+
   return (
     <>
       <CardContainer>
@@ -69,6 +78,12 @@ const TemplateFirst = (props) => {
             <h6 style={{ fontSize: `${design.FontSize}px`,fontFamily:`${design.SelectFont}` }}>Address :</h6>
             <p style={{ fontSize: `${design.FontSize}px`,fontFamily:`${design.SelectFont}` }}>{props.address}</p>
           </CardInfo>
+          {Array.isArray(addmore) && addmore.map((element) => (
+  <CardInfo>
+    <h6 style={{ fontSize: `${design.FontSize}px`, fontFamily: `${design.SelectFont}` }}>{element.label} :</h6>
+    <p style={{ fontSize: `${design.FontSize}px`, fontFamily: `${design.SelectFont}` }}>{element.value}</p>
+  </CardInfo>
+))}
         </CardContainerContent>
       </CardContainer>
     </>
