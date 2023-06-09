@@ -197,9 +197,10 @@ const General = () => {
   const [alert, setAlert] = useState(false);
   const [selectField, setSelectField] = useState("Choose Type");
   const [id,setId]=useState(9)
-  const { generalFields, setGeneralFields, setImg } = useContext(EditerContext);
+  const { generalFields, setGeneralFields, setImg , addmore, setAddMore } = useContext(EditerContext);
   const [inputFields, setInputFields] = useState(generalFields);
   console.log(selectField);
+  console.log(addmore);
   const handleChange = (event, index) => {
     const oldFields = [...inputFields];
     oldFields[index].value = event.target.value;
@@ -226,9 +227,6 @@ const General = () => {
   //   const xyz = { label : values.label , field : selectField }
   //   console.log("Label Value:", xyz);
   // };
-  useEffect(()=>{
-    setInputFields(inputFields)
-  },[inputFields])
   return (
     <>
       {alert ? (
@@ -252,11 +250,11 @@ const General = () => {
                   type: selectField,
                   value: "",
                 };
-                setInputFields([...inputFields, newField]);
-                //console.log(inputFields);
                 console.log(newField);
+                setAddMore([...addmore,newField]);
+                console.log("addmore=>"+addmore);
+                setInputFields([...inputFields, newField]);
                 setAlert(false);
-                console.log(values,selectField);
                 resetForm({ values: "" });
               }}
             >
