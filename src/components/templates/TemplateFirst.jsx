@@ -108,19 +108,19 @@ const TemplateFirst = (props) => {
             <p style={{ fontSize: `${design.FontSize}px`,fontFamily:`${design.SelectFont}` }}>{props.address}</p>
           </CardInfo>
           <CardInfo>
-            <span style={{ fontSize: `20px`, cursor: 'pointer' }}>
+            <span style={{ fontSize: `${design.IconSize ? design.IconSize : 20}px`, cursor: 'pointer',border: `${props.facebook !== "" ? '1px solid black' : 'none'}`,marginRight:'2px',borderRadius:`${design.Shape}%`,color:`${design.IconColor}` }}>
             {props.facebook==""?"": < AiFillFacebook onClick={openFacebookUrl} />}  
             </span>
-            <span style={{ fontSize: `20px`, cursor: 'pointer' }}>
+            <span style={{ fontSize: `${design.IconSize ? design.IconSize : 20}px`, cursor: 'pointer',border: `${props.youtube !== "" ? '1px solid black' : 'none'}`,marginRight:'2px',borderRadius:`${design.Shape}%`,color:`${design.IconColor}` }}>
             {props.youtube==""?"": < AiFillYoutube onClick={openYoutubeUrl} />}  
             </span>
-            <span style={{ fontSize: `20px`, cursor: 'pointer' }}>
+            <span style={{ fontSize: `${design.IconSize ? design.IconSize : 20}px`, cursor: 'pointer',border: `${props.instagram !== "" ? '1px solid black' : 'none'}`,marginRight:'2px',borderRadius:`${design.Shape}%`,color:`${design.IconColor}` }}>
             {props.instagram==""?"": < AiFillInstagram onClick={openInstagramUrl} />}  
             </span>
-            <span style={{ fontSize: `20px`, cursor: 'pointer' }}>
+            <span style={{ fontSize: `${design.IconSize ? design.IconSize : 20}px`, cursor: 'pointer',border: `${props.twitter !== "" ? '1px solid black' : 'none'}`,marginRight:'2px',borderRadius:`${design.Shape}%`,color:`${design.IconColor}` }}>
             {props.twitter==""?"": < AiFillTwitterCircle onClick={openTwitterUrl} />}   
             </span>
-            <span style={{ fontSize: `20px`, cursor: 'pointer' }}>
+            <span style={{ fontSize: `${design.IconSize ? design.IconSize : 20}px`, cursor: 'pointer',border: `${props.github !== "" ? '1px solid black' : 'none'}`,marginRight:'2px',borderRadius:`${design.Shape}%`,color:`${design.IconColor}` }}>
             {props.github==""?"": < AiFillGithub onClick={openGithubUrl} />} 
             </span>
           </CardInfo>

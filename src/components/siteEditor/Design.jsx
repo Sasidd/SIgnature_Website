@@ -16,12 +16,15 @@ const Design = () => {
   const border = ["2px", "4px", "6px", "8px", "10px"];
 
   const [fontrange, setFontRange] = useState(13);
-  const [iconSize, setIconSize] = useState(0);
+  const [iconSize, setIconSize] = useState(20);
   const [imageSize, setImageSize] = useState(100);
   const [templatecolor, setTemplateColor] = useState("");
   const [iconcolor, setIconColor] = useState("");
   const [linecolor, setLineColor] = useState("");
-  // const [font,setFont]=useState("")
+  // const [square,setSquare]=useState("")
+  // const [rect,setRect]=useState("")
+  // const [circle,setCircle]=useState("")
+  const [shape,setShape]=useState("")
 
   const { design, setDesign } = useContext(EditerContext);
 
@@ -31,12 +34,13 @@ const Design = () => {
       [e.target.name]: e.target.value,
       selectFont: selectFont, // Include selectFont and selectBorder here
       selectBorder: selectBorder,
+      Shape:shape
     });
   };
 
   useEffect(() => {
     handleDesignChange({ target: { name: "SelectFont", value: selectFont } });
-  }, [selectFont, selectBorder]);
+  }, [selectFont, selectBorder,shape]);
   return (
     <>
       <div className="designeditor">
@@ -48,9 +52,10 @@ const Design = () => {
                 SelectFont: selectFont,
                 FontSize: fontrange,
                 Template_Color: templatecolor,
+                IconColor:iconcolor,
+                IconSize:iconSize,
                 LineColor: linecolor,
                 ImgSize: imageSize,
-                ImageLink: null,
               }}
               validateOnMount
               onSubmit={(values, { resetForm }) => {
@@ -108,33 +113,41 @@ const Design = () => {
                   <div className="iconShape">
                     <h4>Shape</h4>
                     <div>
-                      <img src={shape_squre} alt="icon" />
-                      <img src={shape_radius} alt="icon" />
-                      <img src={shape_rounded} alt="icon" />
+                      <img src={shape_squre} alt="icon" onClick={()=>{setShape("0")}} />
+                      <img src={shape_radius} alt="icon" onClick={()=>{setShape("30")}}/>
+                      <img src={shape_rounded} alt="icon" onClick={()=>{setShape("50")}}/>
                     </div>
                   </div>
                   <FormInput
                     label="Icon Color"
-                    name="phone"
+                    name="IconColor"
                     type="color"
                     className="edit-input"
                     margin="m-4"
                     value={iconcolor}
-                    onChange={(e) => setIconColor(e.target.value)}
+                    onChange={(e) => {
+                      formik.handleChange(e);
+                      setIconColor(e.target.value);
+                      handleDesignChange(e);
+                    }}
                     color={iconcolor}
                     colorInput="color-input"
                   />
                   <FormInput
                     label="Icon Size"
-                    name="name"
+                    name="IconSize"
                     type="range"
                     className="edit-input"
                     margin="m-4"
-                    min="10px"
-                    max="30px"
+                    min="20"
+                    max="90"
                     number={iconSize}
                     value={iconSize}
-                    onChange={(e) => setIconSize(e.target.value)}
+                    onChange={(e) => {
+                      formik.handleChange(e);
+                      setIconSize(e.target.value);
+                      handleDesignChange(e);
+                    }}
                   />
                   <Divider className="divider" />
 
