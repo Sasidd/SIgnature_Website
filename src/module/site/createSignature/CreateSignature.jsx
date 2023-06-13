@@ -12,8 +12,9 @@ import TemplateSecond from "../../../components/templates/TemplateSecond";
 import { EditerContext } from "../../../AppContext";
 
 const CreateSignature = () => {
-  const { generalFields , switching } = useContext(EditerContext);
+  const { generalFields , switching, socialFields } = useContext(EditerContext);
   console.log(generalFields);
+  console.log(socialFields);
 
   return (
     <>
@@ -57,6 +58,26 @@ const CreateSignature = () => {
                     address={
                       generalFields.find((item) => item.name === "address")
                         ?.value || "USA"
+                    }
+                    facebook={
+                      socialFields.find((item) => item.name === "facebook")
+                        ?.value
+                    }
+                    youtube={
+                      socialFields.find((item) => item.name === "youtube")
+                        ?.value
+                    }
+                    instagram={
+                      socialFields.find((item) => item.name === "instagram")
+                        ?.value
+                    }
+                    twitter={
+                      socialFields.find((item) => item.name === "twitter")
+                        ?.value 
+                    }
+                    github={
+                      socialFields.find((item) => item.name === "github")
+                        ?.value 
                     }
                   />}
 
