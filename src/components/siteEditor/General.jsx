@@ -242,6 +242,7 @@ const General = () => {
               validateOnMount
               validationSchema={validation}
               onSubmit={(values, { resetForm }) => {
+                console.log('sss');
                 setId(id+1)
                 const newField = {
                   id:id,

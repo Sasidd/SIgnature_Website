@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { pic } from "../../assests";
+import { facebook, pic } from "../../assests";
 import {
   CardContainer,
   CardContainerContent,
@@ -8,18 +8,47 @@ import {
   CardInfo,
 } from "../../styles/TemplateFirst";
 import { EditerContext } from "../../AppContext";
+import { AiFillFacebook , AiFillYoutube , AiFillInstagram , AiFillTwitterCircle , AiFillGithub  } from "react-icons/ai";
 const TemplateFirst = (props) => {
   const { design, img , setImg , addmore, setAddMore } = useContext(EditerContext);
   console.log(design)
   console.log(img);
   console.log(addmore);
-
-  // useEffect(() => {
-  //   // Add 'addmore' as a dependency and perform any necessary actions
-  //   // when the 'addmore' array changes.
-  //   // This code will execute whenever 'addmore' is updated.
-  //   // You can fetch new data or perform any other necessary operations.
-  // }, [addmore]);
+  const openFacebookUrl = () => {
+    const url = props.facebook.startsWith("http://") || props.facebook.startsWith("https://")
+      ? props.facebook
+      : `https://${props.facebook}`;
+      console.log("Facebook");
+    window.open(url, "_blank");
+  };
+  const openYoutubeUrl = () => {
+    const url = props.youtube.startsWith("http://") || props.youtube.startsWith("https://")
+      ? props.youtube
+      : `https://${props.youtube}`;
+      console.log("Youtube");
+    window.open(url, "_blank");
+  };
+  const openInstagramUrl = () => {
+    const url = props.instagram.startsWith("http://") || props.instagram.startsWith("https://")
+      ? props.instagram
+      : `https://${props.instagram}`;
+      console.log("Instagram");
+    window.open(url, "_blank");
+  };
+  const openTwitterUrl = () => {
+    const url = props.twitter.startsWith("http://") || props.twitter.startsWith("https://")
+      ? props.twitter
+      : `https://${props.twitter}`;
+      console.log("twitter");
+    window.open(url, "_blank");
+  };
+  const openGithubUrl = () => {
+    const url = props.github.startsWith("http://") || props.github.startsWith("https://")
+      ? props.github
+      : `https://${props.github}`;
+      console.log("github");
+    window.open(url, "_blank");
+  };
 
   return (
     <>
@@ -68,7 +97,7 @@ const TemplateFirst = (props) => {
           </CardInfo>
           <CardInfo>
             <h6 style={{ fontSize: `${design.FontSize}px`,fontFamily:`${design.SelectFont}` }}>
-              Email Address :
+              Email Address : 
             </h6>
             <p style={{ fontSize: `${design.FontSize}px`,fontFamily:`${design.SelectFont}` }}>
               {props.emailAddress}
@@ -77,6 +106,23 @@ const TemplateFirst = (props) => {
           <CardInfo>
             <h6 style={{ fontSize: `${design.FontSize}px`,fontFamily:`${design.SelectFont}` }}>Address :</h6>
             <p style={{ fontSize: `${design.FontSize}px`,fontFamily:`${design.SelectFont}` }}>{props.address}</p>
+          </CardInfo>
+          <CardInfo>
+            <span style={{ fontSize: `20px`, cursor: 'pointer' }}>
+            {props.facebook==""?"": < AiFillFacebook onClick={openFacebookUrl} />}  
+            </span>
+            <span style={{ fontSize: `20px`, cursor: 'pointer' }}>
+            {props.youtube==""?"": < AiFillYoutube onClick={openYoutubeUrl} />}  
+            </span>
+            <span style={{ fontSize: `20px`, cursor: 'pointer' }}>
+            {props.instagram==""?"": < AiFillInstagram onClick={openInstagramUrl} />}  
+            </span>
+            <span style={{ fontSize: `20px`, cursor: 'pointer' }}>
+            {props.twitter==""?"": < AiFillTwitterCircle onClick={openTwitterUrl} />}   
+            </span>
+            <span style={{ fontSize: `20px`, cursor: 'pointer' }}>
+            {props.github==""?"": < AiFillGithub onClick={openGithubUrl} />} 
+            </span>
           </CardInfo>
           {Array.isArray(addmore) && addmore.map((element) => (
   <CardInfo>
