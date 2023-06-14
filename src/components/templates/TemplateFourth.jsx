@@ -9,7 +9,7 @@ import {
 } from "../../styles/TemplateFirst";
 import { EditerContext } from "../../AppContext";
 import { AiFillFacebook, AiFillYoutube, AiFillInstagram, AiFillTwitterCircle, AiFillGithub } from "react-icons/ai";
-const TemplateFirst = (props) => {
+const TemplateFourth = (props) => {
   const { design, img, setImg, addmore, setAddMore } = useContext(EditerContext);
   console.log(design)
   console.log(img);
@@ -52,15 +52,31 @@ const TemplateFirst = (props) => {
 
   return (
     <>
+    <div style={{backgroundColor:"purple",paddingTop:"10px",paddingBottom:"10px"}}>
+    <CardHeadings>
+            <h3
+              style={{
+                fontSize: `${design.FontSize=="13"?"30px":design.FontSize}`,
+                color: `${!design.Template_Color?"white":design.Template_Color}`,
+                fontFamily: `${design.SelectFont}`,
+                textAlign:"center",
+              }}
+            >
+              {props.name}
+            </h3>
+            <br />
+            <h5  style={{
+                fontSize: `${design.FontSize}px`,
+                color: `${!design.Template_Color?"white":design.Template_Color}`,
+                fontFamily: `${design.SelectFont}`,
+                textAlign:"center"
+              }}>
+              {props.role} , <span>{props.company}</span>
+            </h5>
+          </CardHeadings>
+    </div>
       <CardContainer>
-        <CardContainerImage
-          style={{
-            borderRight: `${design.selectBorder} solid ${!design.LineColor ? "black" : design.LineColor
-              }`,
-            // width:"0px"
-          }}
-        >
-          <img
+          <img style={{borderRadius:"50%",marginTop:"5px"}}
             src={
               design.ImageLink === undefined || !design.ImageLink || ""
                 ? img || pic
@@ -70,45 +86,30 @@ const TemplateFirst = (props) => {
             height={!design.ImgSize ? "152rem" : design.ImgSize}
             alt="profile"
           />
-        </CardContainerImage>
         <CardContainerContent>
-          <CardHeadings>
-            <h3
-              style={{
-                fontSize: `${design.FontSize}px`,
-                color: `${design.Template_Color}`,
-                fontFamily: `${design.SelectFont}`
-              }}
-            >
-              {props.name}
-            </h3>
-            <h5 style={{ fontSize: `${design.FontSize}px`, fontFamily: `${design.SelectFont}` }}>
-              {props.role} , <span>{props.company}</span>
-            </h5>
-          </CardHeadings>
           <CardInfo>
-            <h6 style={{ fontSize: `${design.FontSize}px`, fontFamily: `${design.SelectFont}` }}>Phone :</h6>
+            <h6 style={{ fontSize: `${design.FontSize}px`, fontFamily: `${design.SelectFont}` }}>Phone </h6>
             <p style={{ fontSize: `${design.FontSize}px`, fontFamily: `${design.SelectFont}` }}>{props.phone}</p>
           </CardInfo>
           <CardInfo>
-            <h6 style={{ fontSize: `${design.FontSize}px`, fontFamily: `${design.SelectFont}` }}>Website URL :</h6>
+            <h6 style={{ fontSize: `${design.FontSize}px`, fontFamily: `${design.SelectFont}` }}>Website URL </h6>
             <p style={{ fontSize: `${design.FontSize}px`, fontFamily: `${design.SelectFont}` }}>{props.url}</p>
           </CardInfo>
           <CardInfo>
             <h6 style={{ fontSize: `${design.FontSize}px`, fontFamily: `${design.SelectFont}` }}>
-              Email Address :
+              Email Address 
             </h6>
             <p style={{ fontSize: `${design.FontSize}px`, fontFamily: `${design.SelectFont}` }}>
               {props.emailAddress}
             </p>
           </CardInfo>
           <CardInfo>
-            <h6 style={{ fontSize: `${design.FontSize}px`, fontFamily: `${design.SelectFont}` }}>Address :</h6>
+            <h6 style={{ fontSize: `${design.FontSize}px`, fontFamily: `${design.SelectFont}` }}>Address </h6>
             <p style={{ fontSize: `${design.FontSize}px`, fontFamily: `${design.SelectFont}` }}>{props.address}</p>
           </CardInfo>
           {Array.isArray(addmore) && addmore.map((element) => (
             <CardInfo>
-              <h6 style={{ fontSize: `${design.FontSize}px`, fontFamily: `${design.SelectFont}` }}>{element.label} :</h6>
+              <h6 style={{ fontSize: `${design.FontSize}px`, fontFamily: `${design.SelectFont}` }}>{element.label} </h6>
               <p style={{ fontSize: `${design.FontSize}px`, fontFamily: `${design.SelectFont}` }}>{element.value}</p>
             </CardInfo>
           ))}
@@ -136,4 +137,4 @@ const TemplateFirst = (props) => {
   );
 };
 
-export default TemplateFirst;
+export default TemplateFourth;
