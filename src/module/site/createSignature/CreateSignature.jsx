@@ -10,10 +10,14 @@ import {
 import { TemplateFirst } from "../../../components/templates";
 import TemplateSecond from "../../../components/templates/TemplateSecond";
 import { EditerContext } from "../../../AppContext";
+import TemplateThird from "../../../components/templates/TemplateThird";
+import TemplateFourth from "../../../components/templates/TemplateFourth";
+import TemplateFifth from "../../../components/templates/TemplateFifth";
 
 const CreateSignature = () => {
-  const { generalFields , switching } = useContext(EditerContext);
+  const { generalFields , switching, socialFields } = useContext(EditerContext);
   console.log(generalFields);
+  console.log(socialFields);
 
   return (
     <>
@@ -58,7 +62,180 @@ const CreateSignature = () => {
                       generalFields.find((item) => item.name === "address")
                         ?.value || "USA"
                     }
+                    facebook={
+                      socialFields.find((item) => item.name === "facebook")
+                        ?.value
+                    }
+                    youtube={
+                      socialFields.find((item) => item.name === "youtube")
+                        ?.value
+                    }
+                    instagram={
+                      socialFields.find((item) => item.name === "instagram")
+                        ?.value
+                    }
+                    twitter={
+                      socialFields.find((item) => item.name === "twitter")
+                        ?.value 
+                    }
+                    github={
+                      socialFields.find((item) => item.name === "github")
+                        ?.value 
+                    }
                   />}
+                  <TemplateThird
+                    name={
+                      generalFields.find((item) => item.name === "name")
+                        ?.value || "Grace Fridely"
+                    }
+                    role={
+                      generalFields.find((item) => item.name === "title")
+                        ?.value || "Sales at"
+                    }
+                    company={
+                      generalFields.find((item) => item.name === "company")
+                        ?.value || "Fashionz"
+                    }
+                    phone={
+                      generalFields.find((item) => item.name === "phone")
+                        ?.value || "661 864 1433"
+                    }
+                    url={
+                      generalFields.find((item) => item.name === "website")
+                        ?.value || "www.expample.com"
+                    }
+                    emailAddress={
+                      generalFields.find((item) => item.name === "email")
+                        ?.value || "expample@gmail.com"
+                    }
+                    address={
+                      generalFields.find((item) => item.name === "address")
+                        ?.value || "USA"
+                    }
+                    facebook={
+                      socialFields.find((item) => item.name === "facebook")
+                        ?.value
+                    }
+                    youtube={
+                      socialFields.find((item) => item.name === "youtube")
+                        ?.value
+                    }
+                    instagram={
+                      socialFields.find((item) => item.name === "instagram")
+                        ?.value
+                    }
+                    twitter={
+                      socialFields.find((item) => item.name === "twitter")
+                        ?.value 
+                    }
+                    github={
+                      socialFields.find((item) => item.name === "github")
+                        ?.value 
+                    }
+                  />
+
+                  <TemplateFourth
+                    name={
+                      generalFields.find((item) => item.name === "name")
+                        ?.value || "Grace Fridely"
+                    }
+                    role={
+                      generalFields.find((item) => item.name === "title")
+                        ?.value || "Sales at"
+                    }
+                    company={
+                      generalFields.find((item) => item.name === "company")
+                        ?.value || "Fashionz"
+                    }
+                    phone={
+                      generalFields.find((item) => item.name === "phone")
+                        ?.value || "661 864 1433"
+                    }
+                    url={
+                      generalFields.find((item) => item.name === "website")
+                        ?.value || "www.expample.com"
+                    }
+                    emailAddress={
+                      generalFields.find((item) => item.name === "email")
+                        ?.value || "expample@gmail.com"
+                    }
+                    address={
+                      generalFields.find((item) => item.name === "address")
+                        ?.value || "USA"
+                    }
+                    facebook={
+                      socialFields.find((item) => item.name === "facebook")
+                        ?.value
+                    }
+                    youtube={
+                      socialFields.find((item) => item.name === "youtube")
+                        ?.value
+                    }
+                    instagram={
+                      socialFields.find((item) => item.name === "instagram")
+                        ?.value
+                    }
+                    twitter={
+                      socialFields.find((item) => item.name === "twitter")
+                        ?.value 
+                    }
+                    github={
+                      socialFields.find((item) => item.name === "github")
+                        ?.value 
+                    }
+                  />
+
+                  <TemplateFifth
+                    name={
+                      generalFields.find((item) => item.name === "name")
+                        ?.value || "Grace Fridely"
+                    }
+                    role={
+                      generalFields.find((item) => item.name === "title")
+                        ?.value || "Sales at"
+                    }
+                    company={
+                      generalFields.find((item) => item.name === "company")
+                        ?.value || "Fashionz"
+                    }
+                    phone={
+                      generalFields.find((item) => item.name === "phone")
+                        ?.value || "661 864 1433"
+                    }
+                    url={
+                      generalFields.find((item) => item.name === "website")
+                        ?.value || "www.expample.com"
+                    }
+                    emailAddress={
+                      generalFields.find((item) => item.name === "email")
+                        ?.value || "expample@gmail.com"
+                    }
+                    address={
+                      generalFields.find((item) => item.name === "address")
+                        ?.value || "USA"
+                    }
+                    facebook={
+                      socialFields.find((item) => item.name === "facebook")
+                        ?.value
+                    }
+                    youtube={
+                      socialFields.find((item) => item.name === "youtube")
+                        ?.value
+                    }
+                    instagram={
+                      socialFields.find((item) => item.name === "instagram")
+                        ?.value
+                    }
+                    twitter={
+                      socialFields.find((item) => item.name === "twitter")
+                        ?.value 
+                    }
+                    github={
+                      socialFields.find((item) => item.name === "github")
+                        ?.value 
+                    }
+                  />
+
                  { switching==true && <TemplateSecond
                     name={
                       generalFields.find((item) => item.name === "name")
