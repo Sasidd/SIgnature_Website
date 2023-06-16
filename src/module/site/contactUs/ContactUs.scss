@@ -1,3 +1,5 @@
+@import "../../../scss/variable";
+
 .contactus {
   &-heading {
     padding: 19rem 0rem;
@@ -8,5 +10,22 @@
       margin-top: 1rem;
       color: rgba(43, 68, 101, 0.5);
     }
+  }
+}
+
+.contactus-location {
+  margin: 2rem 0rem;
+  & > h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: $secondry;
+  }
+  & > p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #8a8a8a;
+  }
+  &-container {
+    margin: 7rem 0rem;
   }
 }

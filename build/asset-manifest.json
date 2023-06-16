@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e093c1bc.css",
-    "main.js": "/static/js/main.95c50417.js",
+    "main.css": "/static/css/main.7a5f614b.css",
+    "main.js": "/static/js/main.ea35a562.js",
     "static/media/wrong-signature.svg": "/static/media/wrong-signature.850ea6707333d38f89ad6dbd06161426.svg",
     "static/media/correct-signature.svg": "/static/media/correct-signature.6f035bb4c144e37d0a0faeccf3566e64.svg",
     "static/media/banner.svg": "/static/media/banner.902daccfc60cf68920873e190a5b0839.svg",
@@ -77,11 +77,11 @@
     "static/media/third.svg": "/static/media/third.2d973ad0f193246530370ca222d20f9a.svg",
     "static/media/second.svg": "/static/media/second.8aa558911107b27776415e68d5fae683.svg",
     "static/media/first.svg": "/static/media/first.5bcc3f4f5a2e18058c5bd40efd1c174c.svg",
-    "main.e093c1bc.css.map": "/static/css/main.e093c1bc.css.map",
-    "main.95c50417.js.map": "/static/js/main.95c50417.js.map"
+    "main.7a5f614b.css.map": "/static/css/main.7a5f614b.css.map",
+    "main.ea35a562.js.map": "/static/js/main.ea35a562.js.map"
   },
   "entrypoints": [
-    "static/css/main.e093c1bc.css",
-    "static/js/main.95c50417.js"
+    "static/css/main.7a5f614b.css",
+    "static/js/main.ea35a562.js"
   ]
 }
