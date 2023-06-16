@@ -10,8 +10,8 @@ export const CardContainerImage = styled.div`
   border-right: 1.5px solid black;
   padding: 2rem 3rem;
   & > img {
-   // width: 12rem;
-  //  height: 12rem;
+    // width: 12rem;
+    //  height: 12rem;
     border-radius: 50%;
     object-fit: cover;
   }
@@ -19,10 +19,6 @@ export const CardContainerImage = styled.div`
 
 export const CardContainerContent = styled.div`
   padding: 0rem 3rem;
-
-
-
-  
 `;
 
 export const CardHeadings = styled.div`
@@ -50,5 +46,21 @@ export const CardInfo = styled.div`
   & > p {
     color: #7e7e7e;
     font-size: 1.2rem;
+  }
+`;
+
+export const SocialIcons = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  & > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  & > * {
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
   }
 `;
