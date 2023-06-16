@@ -5,13 +5,11 @@
 ////////////
 
 .signature1 {
-  background-color: $primary;
   &-container {
     display: flex;
     align-items: center;
-    // padding: 0rem 2.5rem;
     padding-left: 2.5rem;
-
+    background-color: $primary;
     & > img {
       width: 16.4rem;
       height: 13.7rem;
@@ -85,9 +83,22 @@
       width: 12.6rem;
       height: 12.6rem;
       border-radius: 50%;
+      margin-right: 2rem;
     }
     &-content {
-      background-color: red;
+      &-item {
+        margin: 0.6rem 0rem;
+      }
+      &-icons {
+        & > * {
+          cursor: pointer;
+          font-size: 1.5rem;
+          color: $secondry;
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+        }
+      }
     }
   }
 
@@ -97,14 +108,127 @@
   }
 }
 
+//////////
+/// signature 3
+///////////
+
+.signature3 {
+  &-container {
+    padding: 5rem;
+    background-color: white;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    &-image {
+      & > img {
+        height: 20.2rem;
+        width: 16rem;
+        object-fit: cover;
+        border-radius: 1rem;
+      }
+    }
+    &-icons {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 0rem 2rem;
+      & > * {
+        font-size: 1.5rem;
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    &-content {
+      & > h4 {
+        font-size: 1.7rem;
+      }
+      & > h5 {
+        font-size: 1.2rem;
+      }
+      &-date {
+        margin-top: 1rem;
+        & > p {
+          font-size: 1.2rem;
+        }
+        & > * {
+          &:not(:last-child) {
+            margin-bottom: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+///////////
+// Signature 4
+////////////
+
+.signature4 {
+  &-container {
+    padding: 5rem;
+    background-color: white;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+
+    &-image {
+      margin-right: 3rem;
+      & > img {
+        height: 20.2rem;
+        width: 16rem;
+        object-fit: cover;
+      }
+    }
+    &-content {
+      &-heading {
+        border-bottom: 2px solid black;
+        padding-bottom: 0.6rem;
+        & > h3 {
+          font-size: 1.6rem;
+        }
+      }
+      & > h4 {
+        margin: 0.7rem 0rem;
+      }
+      &-items {
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 0rem;
+        & > p {
+          margin-right: 0.7rem;
+          font-size: 1.2rem;
+        }
+        & > * {
+          &:first-child {
+            border-right: 1px solid black;
+            padding-right: 1rem;
+          }
+        }
+      }
+      &-icons {
+        margin-top: 1rem;
+        & > * {
+          cursor: pointer;
+          font-size: 1.5rem;
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 ///////////
 // Signature 6
 ////////////
 
 .signature6 {
   width: 49.5rem;
-  background-color: white;
+
   &-container {
+    background-color: white;
     display: flex;
     align-items: center;
     box-shadow: 4.54087px 4.54087px 9.08175px rgba(110, 196, 207, 0.5);
@@ -178,5 +302,771 @@
   }
   & > p {
     font-size: 0.8rem;
+  }
+}
+/////////////
+// Signature 7
+////////////
+
+.signature7 {
+  &-container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 3rem 5rem;
+    border-radius: 17rem;
+    justify-content: space-between;
+    & > img {
+      height: 170px;
+      width: 170px;
+      border-radius: 50%;
+    }
+    &-content {
+      width: 13.3rem;
+      margin-right: 4rem;
+      &-heading {
+        border-bottom: 1.4px solid black;
+        padding-bottom: 1rem;
+        & > h3 {
+          font-size: 1.7em;
+        }
+      }
+      &-data {
+        & > p {
+          margin: 0.8rem 0rem;
+          font-size: 1.3rem;
+        }
+      }
+      &-icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+        & > * {
+          font-size: 2rem;
+          border: 1px solid black;
+
+          padding: 0.2rem;
+          border-radius: 0.2rem;
+        }
+      }
+    }
+  }
+}
+
+//////////
+/// Signature 8
+//////////
+
+.signature8 {
+  &-container {
+    background-color: white;
+    padding: 2.1rem;
+    display: flex;
+    align-items: center;
+    & > img {
+      width: 12.6rem;
+      height: 12.6rem;
+      margin-right: 2rem;
+    }
+    &-content {
+      &-item {
+        margin: 0.6rem 0rem;
+      }
+      &-icons {
+        & > * {
+          cursor: pointer;
+          font-size: 1.5rem;
+          color: $secondry;
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/////////////
+/// Signature 9
+/////////////
+
+.signature9 {
+  &-container {
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+    background-color: white;
+    border-radius: 4rem;
+    & > img {
+      width: 15rem;
+      height: 17rem;
+      object-fit: cover;
+      margin-right: 2rem;
+    }
+    &-content {
+      & > h4 {
+        font-size: 1.7rem;
+        color: #567950d8;
+        font-weight: 800;
+      }
+      & > h5 {
+        font-weight: 800;
+        font-size: 1.2rem;
+      }
+      &-data {
+        margin: 0.6rem 0rem;
+        padding-top: 0.3rem;
+      }
+
+      &-icons {
+        & > * {
+          margin-top: 0.6rem;
+          color: #567950d8;
+          font-size: 1.6rem;
+          &:not(:last-child) {
+            margin-right: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    border-left: 1.5px solid black;
+    margin: 0.5rem 0rem;
+    padding-left: 0.6rem;
+    & > h4 {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    & > * {
+      &:first-child {
+        margin-right: 1rem;
+        color: #567950d8;
+      }
+    }
+  }
+}
+
+///////////////
+/// Signature 10
+///////////////
+
+.signature10 {
+  &-container {
+    padding: 4rem;
+    background-color: white;
+    border-radius: 4rem;
+    &-image {
+      text-align: center;
+      & > img {
+        height: 12rem;
+        width: 12rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    &-content {
+      background-color: rgba(252, 135, 67, 0.63);
+      color: white;
+      padding: 2.5rem;
+      border-radius: 1rem;
+      font-family: "Times New Roman", Times, serif;
+      &-heading {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid white;
+        & > h3 {
+          font-size: 1.6rem;
+          font-weight: 500;
+        }
+      }
+      & > h4 {
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 1rem 0rem;
+      }
+      &-data {
+        & > p {
+          margin: 0.5rem 0rem;
+          font-size: 1.2rem;
+        }
+      }
+      &-icons {
+        margin-top: 0.7rem;
+        & > * {
+          margin-top: 0.6rem;
+          font-size: 1.6rem;
+          &:not(:last-child) {
+            margin-right: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+///////////
+/// Signature 11
+///////////
+
+.signature11 {
+  &-container {
+    display: flex;
+    align-items: center;
+    padding: 12rem 4rem;
+    background-color: white;
+    border-radius: 3rem;
+    font-family: "Times New Roman", Times, serif;
+    & > * {
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+    &-image {
+      & > img {
+        height: 12rem;
+        width: 12rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    &-content {
+      & > h3 {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin: 0.6rem 0rem;
+      }
+      &-data {
+        width: 18rem;
+        & > p {
+          font-size: 1.3rem;
+          margin: 0.3rem;
+        }
+      }
+    }
+    &-icons {
+      border-left: 2px solid red;
+      padding-left: 0.5rem;
+      & > * {
+        &:not(:last-child) {
+          margin-bottom: 0.6rem;
+        }
+      }
+      & > div {
+        background-color: red;
+
+        padding: 1rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & > * {
+          color: white;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+///////////
+/// Signature 12
+///////////
+
+.signature12 {
+  &-container {
+    background-color: white;
+    padding: 2.1rem;
+    display: flex;
+    align-items: center;
+    & > img {
+      width: 12.6rem;
+      height: 12.6rem;
+      margin-right: 2rem;
+    }
+    &-content {
+      &-item {
+        margin: 0.6rem 0rem;
+      }
+      &-icons {
+        & > * {
+          cursor: pointer;
+          font-size: 1.5rem;
+          color: $secondry;
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+  }
+}
+
+///////////////
+/// Signature 13
+///////////////
+
+.signature13 {
+  &-container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 2.4rem;
+    &-image {
+      margin-right: 2rem;
+      & > img {
+        width: 8.4rem;
+        height: 8.4rem;
+        border-radius: 50%;
+      }
+    }
+    &-name {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      padding: 0rem 2rem;
+
+      & > h3 {
+        margin-bottom: 1.37rem;
+        font-size: 2.1rem;
+        font-weight: 500;
+      }
+      & > p {
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin: 0.3rem 0rem;
+      }
+    }
+    &-content {
+      margin-left: 2rem;
+      & > p {
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin: 0.3rem 0rem;
+      }
+      &-icons {
+        margin-top: 1rem;
+        & > * {
+          font-size: 2rem;
+          &:not(:last-child) {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+///////////////
+/// Signature 14
+///////////////
+
+.signature14 {
+  &-container {
+    box-shadow: 4px 4px 8px rgba(110, 196, 207, 0.5);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    &-image {
+      margin-right: 1.7rem;
+      padding: 2.1rem;
+      & > img {
+        border: 1rem solid #00c5f7;
+        height: 13rem;
+        width: 13rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    &-content {
+      & > h1 {
+        text-decoration: underline;
+        margin-bottom: 0.8rem;
+      }
+      & > p {
+        font-size: 1.3rem;
+        margin: 0.3rem;
+      }
+      &-icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+        & > * {
+          font-size: 2rem;
+          border: 1px solid black;
+          padding: 0.2rem;
+          border-radius: 0.2rem;
+        }
+      }
+    }
+  }
+}
+
+///////////////
+/// Signature 15
+///////////////
+
+.signature15 {
+  &-container {
+    background-color: #9359a4;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 2.4rem;
+    &-image {
+      margin-right: 2rem;
+      & > img {
+        width: 8.4rem;
+        height: 8.4rem;
+        border-radius: 50%;
+      }
+    }
+    &-name {
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      padding: 0rem 2rem;
+
+      & > h3 {
+        margin-bottom: 1.37rem;
+        font-size: 2.1rem;
+        font-weight: 500;
+      }
+      & > p {
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin: 0.3rem 0rem;
+      }
+    }
+    &-content {
+      margin-left: 2rem;
+      & > p {
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin: 0.3rem 0rem;
+      }
+      &-icons {
+        margin-top: 1rem;
+        & > * {
+          font-size: 2rem;
+          &:not(:last-child) {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+///////////////
+/// Signature 16
+///////////////
+
+.signature16 {
+  &-container {
+    text-align: center;
+    background-color: #252525;
+    padding: 2rem 0rem;
+    color: white;
+    & > img {
+      width: 8.4rem;
+      height: 8.4rem;
+      border-radius: 50%;
+      margin-bottom: 2rem;
+    }
+    &-content {
+      margin-bottom: 2rem;
+      & > h2 {
+        font-size: 2.1rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+      }
+      & > p {
+        font-size: 1.6rem;
+        font-weight: 300;
+      }
+    }
+    &-icons {
+      & > * {
+        font-size: 2.5rem;
+        color: #9359a4;
+        &:not(:last-child) {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+///////////////
+/// Signature 17
+///////////////
+
+.signature17 {
+  &-container {
+    &-top {
+      display: flex;
+      align-items: center;
+      background-color: #9359a4;
+      padding: 3rem 4rem;
+      color: white;
+      & > img {
+        width: 8.4rem;
+        height: 8.4rem;
+        border-radius: 50%;
+        margin-right: 2rem;
+      }
+      &-name {
+        & > h2 {
+          font-size: 3rem;
+          font-weight: 700;
+        }
+        & > p {
+          font-size: 1.2rem;
+          font-weight: 300;
+        }
+      }
+    }
+    &-bottom {
+      padding: 3rem 4rem;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      &-left {
+        margin-right: 5rem;
+        & > p {
+          font-size: 1.2rem;
+          font-weight: 300;
+        }
+      }
+      &-right {
+        & > p {
+          font-size: 1.2rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+///////////////
+/// Signature 18
+///////////////
+
+.signature18 {
+  &-container {
+    text-align: center;
+    background-color: #252525;
+    padding: 2rem 0rem;
+    color: white;
+    &-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+      & > img {
+        width: 8.4rem;
+        height: 8.4rem;
+        border-radius: 50%;
+        margin-right: 2rem;
+      }
+      & > h2 {
+        font-size: 2.1rem;
+        font-weight: 600;
+      }
+    }
+
+    &-content {
+      margin-bottom: 2rem;
+
+      & > p {
+        font-size: 1.6rem;
+        font-weight: 300;
+      }
+    }
+    &-icons {
+      & > * {
+        font-size: 2.5rem;
+        color: #9359a4;
+        &:not(:last-child) {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+///////////////
+/// Signature 18
+///////////////
+
+.signature19 {
+  &-container {
+    display: flex;
+    align-items: center;
+    background: #96ca52;
+    padding: 2rem;
+    & > * {
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+    &-name {
+      & > h3 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-bottom: 5rem;
+      }
+      & > p {
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin: 0.2rem;
+      }
+    }
+    &-content {
+      & > p {
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin: 0.2rem;
+      }
+      &-icons {
+        margin-top: 4rem;
+        & > * {
+          font-size: 2rem;
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+
+    &-image {
+      & > img {
+        width: 8.4rem;
+        height: 8.4rem;
+        border-radius: 50%;
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+
+///////////////
+/// Signature 20
+///////////////
+
+.signature20 {
+  &-container {
+    &-top {
+      display: flex;
+      align-items: center;
+      background: #3351a3;
+      padding: 3rem 4rem;
+      color: white;
+      & > img {
+        width: 8.4rem;
+        height: 8.4rem;
+        border-radius: 50%;
+        margin-right: 2rem;
+      }
+      &-name {
+        & > h2 {
+          font-size: 3rem;
+          font-weight: 700;
+        }
+        & > p {
+          font-size: 1.2rem;
+          font-weight: 300;
+        }
+      }
+    }
+    &-bottom {
+      padding: 3rem 4rem;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      &-left {
+        margin-right: 5rem;
+        & > p {
+          font-size: 1.2rem;
+          font-weight: 300;
+        }
+      }
+      &-right {
+        & > p {
+          font-size: 1.2rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+///////////////
+/// Signature 21
+///////////////
+
+.signature21 {
+  &-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    & > * {
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+    &-name {
+      & > h3 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-bottom: 5rem;
+      }
+      & > p {
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin: 0.2rem;
+      }
+    }
+    &-content {
+      & > p {
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin: 0.2rem;
+      }
+      &-icons {
+        margin-top: 4rem;
+        & > * {
+          font-size: 2rem;
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+
+    &-image {
+      & > img {
+        width: 8.4rem;
+        height: 8.4rem;
+        border-radius: 50%;
+        margin-right: 2rem;
+      }
+    }
   }
 }

@@ -15,6 +15,7 @@ import {
   ContactUs,
   CreateSignature,
   HomePage,
+  PricePage,
   PrivacyPolicy,
   TemplatesPage,
 } from "./module/site";
@@ -48,6 +49,7 @@ const Routess = () => {
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/create-signature" element={<CreateSignature />} />
             <Route path="/templates" element={<TemplatesPage />} />
+            <Route path="/pricepage" element={<PricePage />} />
           </Route>
           {/* Login pages Layout */}
           <Route path="" element={<LoginLayout />}>

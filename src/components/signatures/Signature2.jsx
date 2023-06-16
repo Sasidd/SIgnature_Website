@@ -30,7 +30,7 @@ const Signature2 = () => {
             </div>
 
             {/* new  */}
-            <div lassName="signature2-container-content-icons align-item-center">
+            <div className="signature2-container-content-icons align-item-center">
               <FaFacebook />
               <FaTwitter />
               <FaLinkedinIn />

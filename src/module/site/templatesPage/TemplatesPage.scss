@@ -1,0 +1,15 @@
+.signaturecards {
+  width: 80%;
+  margin: auto;
+  padding: 5rem 0rem;
+  &-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3rem;
+    & > div {
+      & > * {
+        margin-top: 3rem;
+      }
+    }
+  }
+}

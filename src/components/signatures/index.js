@@ -1,4 +1,21 @@
 // Signature Template
 export { default as Signature1 } from "./Signature1";
 export { default as Signature2 } from "./Signature2";
+export { default as Signature3 } from "./Signature3";
+export { default as Signature4 } from "./Signature4";
 export { default as Signature6 } from "./Signature6";
+export { default as Signature7 } from "./Signature7";
+export { default as Signature8 } from "./Signature8";
+export { default as Signature9 } from "./Signature9";
+export { default as Signature10 } from "./Signature10";
+export { default as Signature11 } from "./Signature11";
+export { default as Signature12 } from "./Signature12";
+export { default as Signature13 } from "./Signature13";
+export { default as Signature14 } from "./Signature14";
+export { default as Signature15 } from "./Signature15";
+export { default as Signature16 } from "./Signature16";
+export { default as Signature17 } from "./Signature17";
+export { default as Signature18 } from "./Signature18";
+export { default as Signature19 } from "./Signature19";
+export { default as Signature20 } from "./Signature20";
+export { default as Signature21 } from "./Signature21";

@@ -1,0 +1,95 @@
+@import "../../../scss/variable";
+
+.pricepage {
+  &-heading {
+    text-align: center;
+    padding: 3rem 0rem;
+    & > h4 {
+      font-size: 2.8rem;
+      color: $secondry;
+      font-weight: 500;
+    }
+    & > h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: $secondry;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  // container
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
+    padding: 3rem 0rem;
+  }
+}
+
+// singature cards
+
+.signatureplain-cards {
+  & > h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $secondry;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  &-top {
+    text-align: center;
+    background-color: white;
+    padding: 5rem 3rem;
+
+    & > h4 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      color: $secondry;
+    }
+    & > h5 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: gray;
+    }
+    & > button {
+      cursor: pointer;
+      background-color: $secondry;
+      border: none;
+      border-radius: 0.3rem;
+      padding: 1rem 0rem;
+      color: white;
+      margin-top: 4rem;
+      width: 100%;
+    }
+  }
+  &-bottom {
+    margin-top: 1rem;
+    background-color: white;
+    &-item {
+      display: flex;
+      align-items: center;
+      width: 70%;
+      margin: auto;
+      padding: 0.8rem 0rem;
+      &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2rem;
+        & > * {
+          font-size: 2rem;
+          color: $secondry;
+        }
+      }
+      & > p {
+        font-size: 1.3rem;
+        color: gray;
+      }
+    }
+  }
+}

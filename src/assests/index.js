@@ -52,7 +52,11 @@ import style from "./icons/style.svg";
 import pic from "./signaturecards/pic.avif";
 import signature1 from "./signaturecards/signature1.svg";
 import signature2 from "./signaturecards/signature2.svg";
-
+import signature7 from "./signaturecards/signature7.png";
+import signature8 from "./signaturecards/signature8.svg";
+import signature12 from "./signaturecards/signature12.png";
+import signature14 from './signaturecards/signature14.png'
+import menprofile from "./signaturecards/menprofile.png";
 // icons for signature
 import call from "./signaturecards/icons/call.svg";
 import location from "./signaturecards/icons/location.svg";
@@ -155,6 +159,11 @@ export {
   pic,
   signature1,
   signature2,
+  signature7,
+  signature8,
+  signature12,
+  signature14,
+  menprofile,
 
   // Signature Icons
   call,
