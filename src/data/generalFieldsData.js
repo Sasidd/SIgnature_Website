@@ -1,3 +1,5 @@
+import { IoIosMagnet } from "react-icons/io";
+
 export const generalFieldsData = [
   {
     id: 1,
@@ -49,3 +51,6 @@ export const generalFieldsData = [
     value: "",
   },
 ];
+
+
+
