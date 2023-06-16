@@ -9,8 +9,8 @@ import {
   FormInput,
   Button,
   Container,
+  FormText,
 } from "../../../components";
-import FormText from "../../../components/FormInput/FormText";
 
 const ContactUs = () => {
   const validation = Yup.object({
@@ -53,15 +53,45 @@ const ContactUs = () => {
               >
                 {(formik) => (
                   <Form>
-                    <FormInput label="Name" name="name" type="text" />
-                    <FormInput label="Email" name="email" type="email" />
-                    {/* <FormText label="Enter Your Message" type="text" /> */}
+                    <FormInput
+                      label="Name"
+                      name="name"
+                      type="text"
+                      placeholder="Enter Your Name"
+                      className="blueinput"
+                    />
+                    <FormInput
+                      label="Email"
+                      name="email"
+                      type="email"
+                      placeholder="Enter Your email address"
+                      className="blueinput"
+                    />
+                    <FormText
+                      name="message"
+                      label="Enter Your Message"
+                      type="text"
+                      className="bluetext"
+                    />
                     <Button className="btn-primary rounded  mt-2 ">
-                      Sign up
+                      Submit
                     </Button>
                   </Form>
                 )}
               </Formik>
+              <div className="contactus-location-container">
+                <div className="contactus-location">
+                  <h3>Call Us</h3>
+                  <p>675-3244-345-111</p>
+                </div>
+                <div className="contactus-location">
+                  <h3>location</h3>
+                  <p>
+                    1134 Castle Hill Ave Bronx North Dakota Zip/ <br /> Postal
+                    Code 10462 United States America
+                  </p>
+                </div>
+              </div>
             </Container>
           </div>
         </Container>

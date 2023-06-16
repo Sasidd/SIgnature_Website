@@ -29,69 +29,6 @@ const Social = () => {
 
   return (
     <>
-      {/* {socialAlert ? (
-        <Modal>
-          <div className="modal-addnew-general-fields">
-            <div className="modal-addnew-general-fields-heading">
-              <h3>Select Add Input Field</h3>
-            </div>
-            <Formik
-              initialValues={{
-                label: "",
-                image: "",
-              }}
-              validateOnMount
-              validationSchema={validation}
-              onSubmit={(values, { resetForm }) => {
-                setImage(null);
-                setSocialAlert(false);
-                resetForm({ values: "" });
-              }}
-            >
-              {(formik) => (
-                <div>
-                  <Form onSubmit={formik.handleSubmit}>
-                    <FormInput
-                      label="Enter Icon name"
-                      name="label"
-                      type="text"
-                      className="edit-input"
-                      margin="m-4"
-                    />
-                    <div className="uploadimag-btn">
-                      <button onClick={() =>{imageRef.current.click()}}>
-                        <FiUpload />
-                        Upload Icon
-                      </button>
-                    </div>
-                    {image && (
-                      <img
-                        src={image}
-                        alt="service"
-                        width={30}
-                        height={30}
-                      />
-                    )}
-                    <div style={{ display: "none" }}>
-                      <input
-                        type="file"
-                        name="myImage"
-                        ref={imageRef}
-                        onChange={onImageChange}
-                      />
-                    </div>
-                    <Button className="btn-login rounded center mt-2" type="submit">
-                      Add Icon
-                    </Button>
-                  </Form>
-                </div>
-              )}
-            </Formik>
-          </div>
-        </Modal>
-      ) : (
-        ""
-      )} */}
       <Heading className="editor">Added social icons</Heading>
       <Formik
         initialValues={{
@@ -134,13 +71,13 @@ const Social = () => {
           </>
         )}
       </Formik>
-      <div className="addnew-inputfield">
+      {/* <div className="addnew-inputfield">
         <button
         >
           <IoIosAddCircleOutline />
           Add a Field
         </button>
-      </div>
+      </div> */}
       <div className="mt-4">.</div>
     </>
   );

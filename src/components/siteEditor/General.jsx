@@ -41,10 +41,10 @@ const General = () => {
       .required("Lable is required"),
   });
   const inputType = ["Text", "Phone", "Email", "URL"];
-  // const modelUpdate = (values) => {
-  //   const xyz = { label : values.label , field : selectField }
-  //   console.log("Label Value:", xyz);
-  // };
+  const modelUpdate = (values) => {
+    const xyz = { label : values.label , field : selectField }
+    console.log("Label Value:", xyz);
+  };
   return (
     <>
       {alert ? (

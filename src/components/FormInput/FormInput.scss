@@ -60,6 +60,46 @@
   background-color: white;
 }
 
+// Blue Input
+
+.blueinput {
+  margin-top: 1.7rem;
+  &-label {
+    & > label {
+      font-size: 2rem;
+      color: $secondry;
+      font-weight: 500;
+    }
+  }
+  &-input {
+    & > input {
+      background: #bbeefa;
+      border: none;
+      width: 100%;
+      padding-top: 2.4rem;
+      padding-bottom: 2.4rem;
+      padding-left: 2.4rem;
+    }
+  }
+}
+
+.bluetext {
+  margin-top: 2rem;
+  & > label {
+    font-size: 2rem;
+    color: $secondry;
+    font-weight: 500;
+  }
+  & > textarea {
+    background: #bbeefa;
+    border: none;
+    width: 100%;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    padding-left: 2.4rem;
+  }
+}
+
 // editor Input
 
 .edit-input {

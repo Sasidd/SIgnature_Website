@@ -4,7 +4,7 @@ export { default as Container } from "./container/Container";
 export { default as Button } from "./button/Button";
 export { default as FormInput } from "./FormInput/FormInput";
 export { default as SiteEditor } from "./siteEditor/SiteEditor";
-// export { default as FromText } from "./FormInput/FormText";
+export { default as FormText } from "./FormInput/FormText";
 export { default as Grid } from "./grid/Grid";
 export { default as Banner } from "./banner/Banner";
 export { default as WorkSeam } from "./workSeam/WorkSeam";
