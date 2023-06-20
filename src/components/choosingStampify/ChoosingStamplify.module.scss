@@ -1,0 +1,187 @@
+@import "../../scss/mixins";
+@import "../../scss/variable";
+
+@mixin container() {
+  width: 1300px;
+  max-width: 95vw;
+  margin: 0 auto;
+}
+
+.container {
+  & > h2 {
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 4.1rem;
+    color: #2b4465;
+    text-align: center;
+    @include container();
+  }
+
+  & > .wrapper {
+    background-color: $secondry-light;
+    margin-top: 20rem;
+
+    & > .wrapper2 {
+      @include container();
+      transform: translate(0, -12rem);
+      & > .cards {
+        @include container();
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2.5rem;
+      }
+    }
+
+    & > .bottomCards {
+      @include container();
+      margin: -7rem auto 0;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+      gap: 5rem;
+
+      & > .item {
+        display: flex;
+        gap: 3rem;
+        align-items: stretch;
+        justify-content: center;
+        background: #ffffff;
+        box-shadow: 0px -4px 24px 8px rgba(110, 196, 207, 0.25);
+        border-radius: 1000rem;
+        padding: 3rem 3rem 3rem 7rem;
+        max-width: 90vw;
+        position: relative;
+
+        & > .left {
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          justify-content: flex-start;
+          gap: 0.5rem;
+
+          & > .top {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: flex-start;
+            gap: 0.5rem;
+            flex: 1;
+
+            & > h6 > span {
+              // font-family: "Avenir";
+              font-weight: 800;
+              font-size: 1.9rem;
+              line-height: 2.7rem;
+              color: #000000;
+              padding-bottom: 0.8rem;
+              border-bottom: 1px solid #000;
+              display: inline-block;
+            }
+            & > p {
+              font-weight: 400;
+              font-size: 1.2rem;
+              line-height: 1.5rem;
+              color: #000000;
+            }
+          }
+
+          & > .links {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 0.5rem;
+
+            & > a > img {
+              width: 2.5rem;
+              aspect-ratio: 1/1;
+              object-fit: cover;
+            }
+          }
+
+          & > button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(25%, 25%);
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            & > img {
+              width: 4rem;
+              border-radius: 50%;
+              aspect-ratio: 1/1;
+            }
+          }
+        }
+        & > .right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          & > img {
+            object-fit: cover;
+            width: 13rem;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+
+    & > .bottom {
+      text-align: center;
+      padding: 6rem 0;
+
+      & > button {
+        width: 28rem;
+        height: 5.5rem;
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 1;
+        color: #ffffff;
+        background-color: $primary;
+        border: none;
+        outline: none;
+        border-radius: 0.4rem;
+        cursor: pointer;
+
+        &:hover {
+          filter: saturate(1.2);
+        }
+      }
+    }
+  }
+}
+
+.card {
+  padding: 4.2rem 1.7rem;
+  background: #ffffff;
+  box-shadow: 0px -4px 24px 8px rgba(110, 196, 207, 0.31);
+  border-radius: 1.6rem;
+  //   margin-top: -12rem;
+
+  & > h5 {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.7rem;
+    color: $primary;
+    text-align: center;
+  }
+
+  & > p {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    text-align: center;
+    color: $gray;
+    max-width: 28rem;
+    margin: 3rem auto 0;
+  }
+}
