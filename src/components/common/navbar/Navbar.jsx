@@ -5,7 +5,6 @@ import { Link, NavLink } from "react-router-dom";
 import Container from "../../container/Container";
 
 import { MdAccountCircle } from "react-icons/md";
-import { BiSearch } from "react-icons/bi";
 import { VscMenu } from "react-icons/vsc";
 import { RxCross2 } from "react-icons/rx";
 import { AiFillMessage, AiFillHeart } from "react-icons/ai";
