@@ -13,241 +13,216 @@ const Skeleton2 = () => {
   };
   return (
     <>
-      <div>
-        <Stack
-          spacing={1}
-          sx={{
-            width: "50%",
-            margin: "0 auto",
-            boxShadow: 3,
-            marginY: 4,
-            marginX:3,
-            width: "fit-content",
-            backgroundColor: "white",
+      <Stack
+        sx={{
+          width: "100%",
+          boxShadow: 3,
+          backgroundColor: "white",
+        }}
+      >
+        <br />
+        <div
+          style={{
+            display: "flex",
+
+            alignItems: "center",
           }}
+          onClick={handleSkeletonClick}
         >
-          <br />
+          {/* Profile picture */}
+          <div style={{ marginLeft: "2rem" }}>
+            <Skeleton
+              variant="circular"
+              width={"12rem"}
+              height={"12rem"}
+              style={{ backgroundColor: "gray" }}
+            />
+          </div>
+          {/* Vertical line */}
           <div
             style={{
-              display: "flex",
-              justifyContent: "start",
-              alignItems: "flex-start",
+              borderLeft: "1px solid black",
+              height: "150px",
+              margin: "0rem 2rem",
             }}
-            onClick={handleSkeletonClick}
-          >
-            {/* Profile picture */}
-            <div style={{ marginRight: "10px", marginLeft: "10px" }}>
+          ></div>
+
+          {/* Content */}
+          <div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "start",
+                alignItems: "center",
+              }}
+            >
               <Skeleton
-                variant="circle"
-                width={100}
-                height={100}
-                style={{ backgroundColor: "gray" }}
+                variant="rectangular"
+                width={"30%"}
+                height={"2rem"}
+                style={{ backgroundColor: "gray", marginBottom: "5px" }}
+              />
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "start",
+                alignItems: "center",
+              }}
+            >
+              <Skeleton
+                variant="square"
+                width={"40%"}
+                height={"2rem"}
+                style={{ marginBottom: "5px" }}
+              />
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "start",
+                alignItems: "center",
+              }}
+            >
+              <Skeleton
+                variant="square"
+                width={"50%"}
+                height={"2rem"}
+                style={{ marginBottom: "5px" }}
+              />
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "start",
+                alignItems: "center",
+              }}
+            >
+              <Skeleton
+                variant="square"
+                width={"40%"}
+                height={"1.5rem"}
+                style={{
+                  marginRight: "5px",
+                  marginBottom: "5px",
+                }}
+              />
+              <Skeleton
+                variant="rectangular"
+                width="60%"
+                height={"1.5rem"}
+                style={{ marginRight: "20px", marginBottom: "5px" }}
               />
             </div>
 
-            {/* Content */}
-            <div>
-              <div
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "start",
+                alignItems: "center",
+              }}
+            >
+              <Skeleton
+                variant="square"
+                width={"40%"}
+                height={"1.5rem"}
                 style={{
-                  display: "flex",
-                  justifyContent: "start",
-                  alignItems: "center",
+                  marginRight: "5px",
+                  marginBottom: "5px",
                 }}
-              >
-                <Skeleton
-                  variant="rectangular"
-                  width={210}
-                  height={20}
-                  style={{ backgroundColor: "gray", marginBottom: "5px" }}
-                />
-              </div>
-              <div
+              />
+              <Skeleton
+                variant="rectangular"
+                width="60%"
+                height={"1.5rem"}
+                style={{ marginRight: "20px", marginBottom: "5px" }}
+              />
+            </div>
+
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "start",
+                alignItems: "center",
+              }}
+            >
+              <Skeleton
+                variant="square"
+                width={"40%"}
+                height={"1.5rem"}
                 style={{
-                  display: "flex",
-                  justifyContent: "start",
-                  alignItems: "center",
+                  marginRight: "5px",
+                  marginBottom: "5px",
                 }}
-              >
-                <Skeleton
-                  variant="square"
-                  width={120}
-                  height={20}
-                  style={{ marginRight: "10px", marginBottom: "5px" }}
-                />
-                <Skeleton
-                  variant="rectangular"
-                  width={110}
-                  height={20}
-                  style={{ marginBottom: "5px" }}
-                />
-              </div>
-              <div
+              />
+              <Skeleton
+                variant="rectangular"
+                width="60%"
+                height={"1.5rem"}
+                style={{ marginRight: "20px", marginBottom: "5px" }}
+              />
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "start",
+                alignItems: "center",
+              }}
+            >
+              <Skeleton
+                variant="square"
+                width={"40%"}
+                height={"1.5rem"}
                 style={{
-                  display: "flex",
-                  justifyContent: "start",
-                  alignItems: "center",
+                  marginRight: "5px",
+                  marginBottom: "5px",
                 }}
-              >
-                <Skeleton
-                  variant="square"
-                  width={180}
-                  height={5}
-                  style={{
-                    marginRight: "10px",
-                    backgroundColor: "black",
-                    marginBottom: "5px",
-                  }}
-                />
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "start",
-                  alignItems: "center",
-                }}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "start",
-                    alignItems: "center",
-                  }}
-                >
-                  <Skeleton
-                    variant="square"
-                    width={20}
-                    height={20}
-                    style={{
-                      marginRight: "5px",
-                      backgroundColor: "black",
-                      marginBottom: "5px",
-                    }}
-                  />
-                  <Skeleton
-                    variant="rectangular"
-                    width={80}
-                    height={20}
-                    style={{ marginRight: "20px", marginBottom: "5px" }}
-                  />
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "start",
-                    alignItems: "center",
-                  }}
-                >
-                  <Skeleton
-                    variant="square"
-                    width={20}
-                    height={20}
-                    style={{
-                      marginRight: "5px",
-                      backgroundColor: "black",
-                      marginBottom: "5px",
-                    }}
-                  />
-                  <Skeleton
-                    variant="rectangular"
-                    width={80}
-                    height={20}
-                    style={{ marginBottom: "5px" }}
-                  />
-                </div>
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "start",
-                  alignItems: "center",
-                }}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "start",
-                    alignItems: "center",
-                  }}
-                >
-                  <Skeleton
-                    variant="square"
-                    width={20}
-                    height={20}
-                    style={{
-                      marginRight: "5px",
-                      backgroundColor: "black",
-                      marginBottom: "5px",
-                    }}
-                  />
-                  <Skeleton
-                    variant="rectangular"
-                    width={80}
-                    height={20}
-                    style={{ marginRight: "20px", marginBottom: "5px" }}
-                  />
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "start",
-                    alignItems: "center",
-                  }}
-                >
-                  <Skeleton
-                    variant="square"
-                    width={20}
-                    height={20}
-                    style={{
-                      marginRight: "5px",
-                      backgroundColor: "black",
-                      marginBottom: "5px",
-                    }}
-                  />
-                  <Skeleton
-                    variant="rectangular"
-                    width={80}
-                    height={20}
-                    style={{ marginBottom: "5px" }}
-                  />
-                </div>
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "start",
-                  alignItems: "center",
-                }}
-              >
-                <Skeleton
-                  variant="rectangular"
-                  width={20}
-                  height={20}
-                  style={{ backgroundColor: "blue", marginRight: "10px" }}
-                />
-                <Skeleton
-                  variant="rectangular"
-                  width={20}
-                  height={20}
-                  style={{ backgroundColor: "darkblue", marginRight: "10px" }}
-                />
-                <Skeleton
-                  variant="rectangular"
-                  width={20}
-                  height={20}
-                  style={{ backgroundColor: "lightblue", marginRight: "10px" }}
-                />
-                <Skeleton
-                  variant="rectangular"
-                  width={20}
-                  height={20}
-                  style={{ backgroundColor: "red" }}
-                />
-              </div>
+              />
+              <Skeleton
+                variant="rectangular"
+                width="60%"
+                height={"1.5rem"}
+                style={{ marginRight: "20px", marginBottom: "5px" }}
+              />
+            </div>
+
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "start",
+                alignItems: "center",
+                marginTop: "1.5rem",
+              }}
+            >
+              <Skeleton
+                variant="rectangular"
+                width={20}
+                height={20}
+                style={{ backgroundColor: "blue", marginRight: "10px" }}
+              />
+              <Skeleton
+                variant="rectangular"
+                width={20}
+                height={20}
+                style={{ backgroundColor: "darkblue", marginRight: "10px" }}
+              />
+              <Skeleton
+                variant="rectangular"
+                width={20}
+                height={20}
+                style={{ backgroundColor: "lightblue", marginRight: "10px" }}
+              />
+              <Skeleton
+                variant="rectangular"
+                width={20}
+                height={20}
+                style={{ backgroundColor: "red" }}
+              />
             </div>
           </div>
-          <br />
-        </Stack>
-      </div>
+        </div>
+        <br />
+      </Stack>
     </>
   );
 };

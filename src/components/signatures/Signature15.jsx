@@ -1,5 +1,5 @@
 import React from "react";
-import { menprofile } from "../../assests";
+import { Profile_pic8 } from "../../assests";
 import { AiFillTwitterSquare } from "react-icons/ai";
 import { IoLogoYoutube } from "react-icons/io";
 const Signature15 = () => {
@@ -8,7 +8,7 @@ const Signature15 = () => {
       <div className="signature15">
         <div className="signature15-container">
           <div className="signature15-container-image">
-            <img src={menprofile} alt="profile " />
+            <img src={Profile_pic8} alt="profile " />
           </div>
           <div className="signature15-container-name">
             <h3>Peter Grecko</h3>

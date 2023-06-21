@@ -30,7 +30,7 @@ const CreateSignature = () => {
                   Free Email Signature Generator
                 </Heading>
                 <ScreenView>
-                  {switching == false && (
+                  {switching == true && (
                     <TemplateFirst
                       name={
                         generalFields.find((item) => item.name === "name")
@@ -83,7 +83,7 @@ const CreateSignature = () => {
                     />
                   )}
 
-                  {switching == true && (
+                  {switching == false && (
                     <TemplateSecond
                       name={
                         generalFields.find((item) => item.name === "name")
@@ -112,6 +112,26 @@ const CreateSignature = () => {
                       address={
                         generalFields.find((item) => item.name === "address")
                           ?.value || "USA"
+                      }
+                      facebook={
+                        socialFields.find((item) => item.name === "facebook")
+                          ?.value
+                      }
+                      youtube={
+                        socialFields.find((item) => item.name === "youtube")
+                          ?.value
+                      }
+                      instagram={
+                        socialFields.find((item) => item.name === "instagram")
+                          ?.value
+                      }
+                      twitter={
+                        socialFields.find((item) => item.name === "twitter")
+                          ?.value
+                      }
+                      github={
+                        socialFields.find((item) => item.name === "github")
+                          ?.value
                       }
                     />
                   )}

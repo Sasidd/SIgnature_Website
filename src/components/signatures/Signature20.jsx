@@ -1,5 +1,5 @@
 import React from "react";
-import { menprofile } from "../../assests";
+import { Profile_pic1 } from "../../assests";
 const Signature20 = () => {
   return (
     <>
@@ -16,7 +16,7 @@ const Signature20 = () => {
             </div>
           </div>
           <div className="signature20-container-top">
-            <img src={menprofile} alt="profile" />
+            <img src={Profile_pic1} alt="profile" />
             <div className="signature20-container-top-name">
               <h2>Jane Doe</h2>
               <p>Global Operations Executive</p>

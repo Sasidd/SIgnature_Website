@@ -1,5 +1,5 @@
 import React from "react";
-import { pic } from "../../assests";
+import { Profile_pic2 } from "../../assests";
 import { FaFacebook, FaTwitter, FaLinkedinIn, FaLink } from "react-icons/fa";
 
 const Signature3 = () => {
@@ -8,7 +8,7 @@ const Signature3 = () => {
       <div className="signature3">
         <div className="signature3-container">
           <div className="signature3-container-image">
-            <img src={pic} alt="" />
+            <img src={Profile_pic2} alt="" />
           </div>
           <div className="signature3-container-icons">
             <FaFacebook />

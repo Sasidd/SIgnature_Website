@@ -58,7 +58,7 @@ const Skeleton1 = () => {
             >
               <Skeleton
                 variant="rectangular"
-                width={"80%"}
+                width={"30%"}
                 height={"2rem"}
                 style={{ backgroundColor: "gray", marginBottom: "5px" }}
               />
@@ -77,7 +77,7 @@ const Skeleton1 = () => {
                 style={{ marginBottom: "5px" }}
               />
             </div>
-            <div
+            {/* <div
               style={{
                 display: "flex",
                 justifyContent: "start",
@@ -99,7 +99,7 @@ const Skeleton1 = () => {
                 height={"1.5rem"}
                 style={{ marginRight: "20px", marginBottom: "5px" }}
               />
-            </div>
+            </div> */}
 
             <div
               style={{

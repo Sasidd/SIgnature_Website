@@ -1,12 +1,12 @@
 import React from "react";
-import { pic } from "../../assests";
+import { Profile_pic5 } from "../../assests";
 import { FaFacebook, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 const Signature9 = () => {
   return (
     <>
       <div className="signature9">
         <div className="signature9-container">
-          <img src={pic} alt="profile" />
+          <img src={Profile_pic5} alt="profile" />
           <div className="signature9-container-content">
             <h4 className="uppercase">Travel Bloger</h4>
             <h5>Antony Myers</h5>

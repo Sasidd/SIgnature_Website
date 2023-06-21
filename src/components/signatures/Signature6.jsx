@@ -3,7 +3,7 @@ import {
   call,
   location,
   mailicon,
-  pic,
+  Profile_pic3,
   signature6,
   website,
 } from "../../assests";
@@ -20,7 +20,7 @@ const Signature6 = () => {
       <div className="signature6">
         <div className="signature6-container">
           <div className="signature6-container-profile">
-            <img src={pic} alt="profile" />
+            <img src={Profile_pic3} alt="profile" />
             <div className="signature6-container-profile-icons space-center">
               <div>
                 <AiFillYoutube />

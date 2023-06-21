@@ -10,6 +10,7 @@ const Templates = () => {
       <div>
         <Skeleton1 />
         {/* <Temp1 /> */}
+        <br />
         <Skeleton2 />
       </div>
     </>

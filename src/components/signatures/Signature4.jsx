@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import { pic } from "../../assests";
+import { Profile_pic1 } from "../../assests";
 
 const Signature4 = () => {
   return (
@@ -8,7 +8,7 @@ const Signature4 = () => {
       <div className="signature4">
         <div className="signature4-container">
           <div className="signature4-container-image">
-            <img src={pic} alt="profile" />
+            <img src={Profile_pic1} alt="profile" />
           </div>
           <div className="signature4-container-content">
             <div className="signature4-container-content-heading">

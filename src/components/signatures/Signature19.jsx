@@ -6,7 +6,7 @@ import {
   AiFillInstagram,
   AiFillYoutube,
 } from "react-icons/ai";
-import { menprofile } from "../../assests";
+import { Profile_pic10 } from "../../assests";
 const Signature19 = () => {
   return (
     <>
@@ -29,7 +29,7 @@ const Signature19 = () => {
             </div>
           </div>
           <div className="signature19-container-image">
-            <img src={menprofile} alt="profile" />
+            <img src={Profile_pic10} alt="profile" />
           </div>
         </div>
       </div>
