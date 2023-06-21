@@ -29,7 +29,7 @@
           margin-right: 2rem;
           font-size: 1.8rem;
           padding: 2.3rem 1rem;
-          border-bottom: 2.5px solid $primary;
+
           & > p {
             color: $gray;
           }
@@ -184,4 +184,8 @@
     top: 120px;
     z-index: 50;
   }
+}
+
+.active {
+  border-bottom: 2.5px solid $primary;
 }

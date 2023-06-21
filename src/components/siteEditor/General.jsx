@@ -96,7 +96,7 @@ const General = () => {
                     name="SelectFont"
                     data={inputType}
                     className="editselector"
-                    label="Font family"
+                    label="Type"
                     selected={selectField}
                     setSelected={setSelectField}
                     value={selectField}
