@@ -1,5 +1,5 @@
 import React from "react";
-import { menprofile } from "../../assests";
+import { Profile_pic5 } from "../../assests";
 
 import {
   AiFillTwitterSquare,
@@ -29,7 +29,7 @@ const Signature21 = () => {
             </div>
           </div>
           <div className="signature21-container-image">
-            <img src={menprofile} alt="profile" />
+            <img src={Profile_pic5} alt="profile" />
           </div>
         </div>
       </div>

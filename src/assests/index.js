@@ -57,6 +57,17 @@ import signature8 from "./signaturecards/signature8.svg";
 import signature12 from "./signaturecards/signature12.png";
 import signature14 from './signaturecards/signature14.png'
 import menprofile from "./signaturecards/menprofile.png";
+import Profile_pic1 from "./signaturecards/Profile_pic 1.png";
+import Profile_pic2 from "./signaturecards/Profile_pic 2.png";
+import Profile_pic3 from "./signaturecards/Profile_pic 3.png";
+import Profile_pic4 from "./signaturecards/Profile_pic 4.png";
+import Profile_pic5 from "./signaturecards/Profile_pic 5.png";
+import Profile_pic6 from "./signaturecards/Profile_pic 6.png";
+import Profile_pic7 from "./signaturecards/Profile_pic 7.png";
+import Profile_pic8 from "./signaturecards/Profile_pic 8.png";
+import Profile_pic9 from "./signaturecards/Profile_pic 9.png";
+import Profile_pic10 from "./signaturecards/Profile_pic 10.png";
+
 // icons for signature
 import call from "./signaturecards/icons/call.svg";
 import location from "./signaturecards/icons/location.svg";
@@ -164,6 +175,16 @@ export {
   signature12,
   signature14,
   menprofile,
+  Profile_pic1,
+  Profile_pic2,
+  Profile_pic3,
+  Profile_pic4,
+  Profile_pic5,
+  Profile_pic6,
+  Profile_pic7,
+  Profile_pic8,
+  Profile_pic9,
+  Profile_pic10,
 
   // Signature Icons
   call,

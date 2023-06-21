@@ -1,5 +1,5 @@
 import React from "react";
-import { pic } from "../../assests";
+import { Profile_pic6 } from "../../assests";
 
 import { GrFacebook } from "react-icons/gr";
 import { FaTwitterSquare } from "react-icons/fa";
@@ -11,7 +11,7 @@ const Signature10 = () => {
       <div className="signature10">
         <div className="signature10-container">
           <div className="signature10-container-image">
-            <img src={pic} alt="profile" />
+            <img src={Profile_pic6} alt="profile" />
           </div>
           <div className="signature10-container-content">
             <div className="signature10-container-content-heading">

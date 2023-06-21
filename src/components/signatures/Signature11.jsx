@@ -1,5 +1,5 @@
 import React from "react";
-import { pic } from "../../assests";
+import { Profile_pic7 } from "../../assests";
 
 import { BsMusicNoteBeamed, BsSpotify, BsYoutube } from "react-icons/bs";
 
@@ -9,7 +9,7 @@ const Signature11 = () => {
       <div className="signature11">
         <div className="signature11-container">
           <div className="signature11-container-image">
-            <img src={pic} alt="profile" />
+            <img src={Profile_pic7} alt="profile" />
           </div>
           <div className="signature11-container-content">
             <h3>kynan burns</h3>

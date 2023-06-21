@@ -1,14 +1,14 @@
 import React from "react";
 
 import { FaFacebook, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import { signature8 } from "../../assests";
+import { Profile_pic4 } from "../../assests";
 
 const Signature8 = () => {
   return (
     <>
       <div className="signature8">
         <div className="signature8-container">
-          <img src={signature8} alt="signature" />
+          <img src={Profile_pic4} alt="signature" />
           <div className="signature8-container-content">
             <h2>Paige Loewe</h2>
             <p>
